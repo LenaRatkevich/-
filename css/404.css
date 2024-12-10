@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "RethinkSans-Regular";
+  src: url("../fonts/Rethink_Sans/RethinkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant-Regular";
+  src: url("../fonts/Cormorant-Regular.ttf") format("truetype");
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/main.svg);
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding: 120px 350px;
+  -webkit-box-shadow: 0px 0px 60px #f4b6c2;
+          box-shadow: 0px 0px 60px #f4b6c2;
+}
+body .main h1 {
+  font-size: 140px;
+  color: #000;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+body .main p {
+  margin-top: 0;
+  font-size: 72px;
+  color: #000;
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+}
+body .main .button {
+  display: inline-block;
+  padding: 20px 25px;
+  background: #f4b6c2;
+  color: #410341;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+  body .main {
+    margin-top: 80px;
+    padding: 100px 300px;
+  }
+  body .main h1 {
+    font-size: 120px;
+  }
+  body .main p {
+    font-size: 64px;
+  }
+  body .main .button {
+    padding: 20px 25px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  body .main {
+    margin-top: 80px;
+    padding: 90px 240px;
+  }
+  body .main h1 {
+    font-size: 100px;
+  }
+  body .main p {
+    font-size: 60px;
+  }
+  body .main .button {
+    padding: 13px 18px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body .main {
+    margin-top: 60px;
+    padding: 70px 180px;
+  }
+  body .main h1 {
+    font-size: 86px;
+  }
+  body .main p {
+    font-size: 46px;
+  }
+  body .main .button {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body .main {
+    margin-top: 50px;
+    padding: 60px 80px;
+  }
+  body .main h1 {
+    font-size: 75px;
+  }
+  body .main p {
+    font-size: 42px;
+    text-align: center;
+  }
+  body .main .button {
+    padding: 8px 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body .main {
+    margin-top: 50px;
+    padding: 40px 60px;
+  }
+  body .main h1 {
+    font-size: 65px;
+  }
+  body .main p {
+    font-size: 40px;
+    text-align: center;
+  }
+  body .main .button {
+    padding: 8px 10px;
+  }
+}
