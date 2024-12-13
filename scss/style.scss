@@ -56,7 +56,9 @@
 &__logo-img{
     max-width: 36px;
     margin: 23px 0;
-    cursor: pointer;
+    &:hover{
+        cursor: pointer;
+    }
 }
 &__icon{
 display: flex;
@@ -64,8 +66,9 @@ justify-content: end;
 padding-bottom: 3px;
 
 &-img{
-    cursor: pointer;
-    max-width: 30px;
+    &:hover{
+        cursor: pointer;
+    }    max-width: 30px;
     &:first-of-type{
         margin-right: 42px;
     }
@@ -668,14 +671,21 @@ a{
 }
 #scroll{
     position: fixed;
-    background-color: #f9eeee;
     bottom: 20px; 
     right: 20px;
     border: none;
     border-radius: 10px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #f9eeee 0%,  #ffd3d3 51%, #f9eeee 100%);
+    &:hover {
+         background-position: right center;
+    }
     img{
         width: 45px;
     }
+    
 }
 @media screen and (min-width:1441px) and (max-width:1920px){
     .container{
