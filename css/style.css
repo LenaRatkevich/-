@@ -51,6 +51,7 @@
 .header .nav__logo-img {
   max-width: 36px;
   margin: 23px 0;
+  cursor: pointer;
 }
 .header .nav__icon {
   display: -webkit-box;
@@ -62,6 +63,7 @@
   padding-bottom: 3px;
 }
 .header .nav__icon-img {
+  cursor: pointer;
   max-width: 30px;
 }
 .header .nav__icon-img:first-of-type {
@@ -114,6 +116,7 @@
 .main-circle:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  cursor: pointer;
 }
 .main-h1 {
   padding-top: 169px;
@@ -224,6 +227,11 @@
   padding: 10px 46px;
   margin-right: auto;
 }
+.malachite-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
+          box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
+}
 
 .crystalvideo-button {
   position: absolute;
@@ -235,6 +243,11 @@
   font-size: 20px;
   padding: 12px 25px;
   margin-top: 536px;
+}
+.crystalvideo-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF;
+          box-shadow: 0 0 0 2px #EAC1BF;
 }
 .crystalvideo-wrap {
   padding: 188px 127px 62px;
@@ -441,6 +454,11 @@
   border: none;
   margin-top: 23px;
   margin-left: 75px;
+}
+.popularcrystals__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #ffd968;
+          box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #ffd968;
 }
 .popularcrystals .crystal {
   display: -webkit-box;
@@ -685,6 +703,11 @@
   padding: 11px 32px;
   margin-right: auto;
 }
+.joinourcrystalclub__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px rgb(242, 209, 207), 0 0 0 3px #000000;
+          box-shadow: 0 0 0 2px rgb(242, 209, 207), 0 0 0 3px #000000;
+}
 .joinourcrystalclub__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,7 +890,7 @@
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
-.crystalsdotcom__back-footer p {
+.crystalsdotcom__back-footer a {
   -ms-grid-column-span: 1;
   grid-column: span 1;
   -ms-grid-row-span: 1;
@@ -879,16 +902,16 @@
   text-transform: uppercase;
   width: 130px;
 }
-.crystalsdotcom__back-footer p:nth-child(4) {
+.crystalsdotcom__back-footer a:nth-child(4) {
   padding-left: 8px;
 }
-.crystalsdotcom__back-footer p:nth-child(5) {
+.crystalsdotcom__back-footer a:nth-child(5) {
   padding-left: 2px;
 }
-.crystalsdotcom__back-footer p:nth-child(9) {
+.crystalsdotcom__back-footer a:nth-child(9) {
   padding-left: 9px;
 }
-.crystalsdotcom__back-footer p:nth-child(10) {
+.crystalsdotcom__back-footer a:nth-child(10) {
   padding-left: 3px;
 }
 .crystalsdotcom__back-p {
@@ -1233,7 +1256,7 @@
     -ms-grid-row: 3;
     -ms-grid-column: 5;
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 18px;
     line-height: 18px;
     width: 140px;
@@ -1523,7 +1546,7 @@
     row-gap: 25px;
     padding-left: 60px;
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 16px;
     line-height: 18px;
     width: 140px;
@@ -1848,7 +1871,7 @@
     -ms-grid-columns: (130px)[5];
     grid-template-columns: repeat(5, 130px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 12px;
     line-height: 14px;
     width: 130px;
@@ -2009,7 +2032,7 @@
     -ms-grid-columns: (120px)[5];
     grid-template-columns: repeat(5, 120px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 12px;
     line-height: 14px;
     width: 120px;
@@ -2348,7 +2371,7 @@
     -ms-grid-columns: (120px)[5];
     grid-template-columns: repeat(5, 120px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 12px;
     line-height: 14px;
     width: 120px;
@@ -2697,7 +2720,7 @@
     -ms-grid-columns: (90px)[5];
     grid-template-columns: repeat(5, 90px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 10px;
     line-height: 14px;
     width: 90px;
@@ -3009,7 +3032,7 @@
     -ms-grid-columns: (90px)[5];
     grid-template-columns: repeat(5, 90px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 10px;
     line-height: 14px;
     width: 90px;
@@ -3578,7 +3601,7 @@
     -ms-grid-columns: (60px)[5];
     grid-template-columns: repeat(5, 60px);
   }
-  .crystalsdotcom__back-footer p {
+  .crystalsdotcom__back-footer a {
     font-size: 8px;
     line-height: 10px;
     width: 60px;
