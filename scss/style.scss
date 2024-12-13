@@ -66,9 +66,10 @@ justify-content: end;
 padding-bottom: 3px;
 
 &-img{
+    max-width: 30px;
     &:hover{
         cursor: pointer;
-    }    max-width: 30px;
+    }    
     &:first-of-type{
         margin-right: 42px;
     }
