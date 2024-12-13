@@ -58,6 +58,10 @@ body .main .button {
   text-decoration: none;
   text-align: center;
   border-radius: 4px;
+  border: none;
+}
+body .main .button:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1439px) {
