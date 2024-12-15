@@ -66,10 +66,9 @@ justify-content: end;
 padding-bottom: 3px;
 
 &-img{
-    max-width: 30px;
     &:hover{
         cursor: pointer;
-    }    
+    }    max-width: 30px;
     &:first-of-type{
         margin-right: 42px;
     }
@@ -154,7 +153,7 @@ padding-bottom: 3px;
         padding-bottom: 186px;
         padding-top: 106px;
     }
-    p{
+    h2{
         display: flex;
         font-family: $fontCormorantR;
         font-weight: $font-Regular;
@@ -320,7 +319,7 @@ padding-bottom: 3px;
             @include mark;
         }
     }
-    &-span{
+    &-h2{
         font-family: $fontRethinkR;
         font-weight: $font-Medium;
         font-size: 16px;
@@ -576,7 +575,7 @@ padding-bottom: 3px;
             text-align: center;
             padding: 2px 20px 11px;
         }
-        span{
+        h5{
             font-family: $fontRethinkR;
             font-weight: $font-Regular;
             font-size: 16px;
@@ -750,7 +749,7 @@ a{
             padding-bottom: 156px;
             padding-top: 116px;
         }
-        p{
+        h2{
             font-size: 52px;
             padding-bottom: 83px;
             padding-right: 0px;
@@ -822,7 +821,7 @@ a{
             padding-left: 0px;
             margin-right: 60px;
         }
-        &-span{
+        &-h2{
             padding-left: 73px;
         }
         &__button{
@@ -909,7 +908,7 @@ a{
                     line-height: 72px;
                     padding: 0;
                 }
-                span{
+                h5{
                     font-size: 18px;
                     line-height: 18px;
                     letter-spacing: 1px;
@@ -1033,7 +1032,7 @@ a{
                 padding-bottom: 100px;
                 padding-top: 116px;
             }
-            p{
+            h2{
                 font-size: 48px;
                 padding-bottom: 63px;
                 padding-right: 0px;
@@ -1109,7 +1108,7 @@ a{
                 padding-top: 22px;
                 margin-right: 58px;
             }
-            &-span{
+            &-h2{
                 padding-left: 75px;
             }
             &__button{
@@ -1205,7 +1204,7 @@ a{
                         line-height: 65px;
                         padding: 0;
                     }
-                    span{
+                    h5{
                         font-size: 18px;
                         line-height: 18px;
                         letter-spacing: 1px;
@@ -1326,7 +1325,7 @@ a{
                 padding-bottom: 100px;
                 padding-top: 116px;
             }
-            p{
+            h2{
                 font-size: 40px;
                 line-height: 60px;
                 padding-bottom: 50px;
@@ -1410,7 +1409,7 @@ a{
                 margin-right: 35px;
                 font-size: 44px;
             }
-            &-span{
+            &-h2{
                 padding-left: 73px;
             }
             &__button{
@@ -1530,7 +1529,7 @@ a{
                         line-height: 55px;
                         padding: 0;
                     }
-                    span{
+                    h5{
                         font-size: 16px;
                         line-height: 18px;
                         letter-spacing: 1px;
@@ -1616,7 +1615,7 @@ a{
                 margin-bottom: 25px;
             }
         }
-        &-span{
+        &-h2{
             padding-left: 73px;
         }
         &__button{
@@ -1809,7 +1808,7 @@ a{
                 padding-bottom: 90px;
                 padding-top: 95px;
             }
-            p{
+            h2{
                 font-size: 36px;
                 line-height: 46px;
                 padding-bottom: 30px;
@@ -1898,7 +1897,7 @@ a{
                     padding-left: 60px; 
                 }
             }
-            &-span{
+            &-h2{
                 padding-left: 63px;
                 font-size: 14px;
             }
@@ -2031,7 +2030,7 @@ a{
                         line-height: 36px;
                         padding: 0;
                     }
-                    span{
+                    h5{
                         font-size: 12px;
                         line-height: 14px;
                         letter-spacing: 1px;
@@ -2198,7 +2197,7 @@ a{
                     }
                 }
             }
-            &-span{
+            &-h2{
                 text-align: center;
                 padding-left: 0;
                 font-size: 14px;
@@ -2351,7 +2350,7 @@ a{
                         line-height: 28px;
                         padding: 0;
                     }
-                    span{
+                    h5{
                         font-size: 12px;
                         line-height: 12px;
                         letter-spacing: 1px;
@@ -2415,7 +2414,7 @@ a{
                     padding-bottom: 100px;
                     padding-top: 55px;
                 }
-                p{
+                h2{
                     font-size: 26px;
                     line-height: 30px;
                     padding-bottom: 15px;
@@ -2538,7 +2537,7 @@ a{
                     }
                 }
             }
-            &-span{
+            &-h2{
                 text-align: center;
                 padding-left: 0;
                 font-size: 14px;
@@ -2618,7 +2617,7 @@ a{
                         line-height: 26px;
                         padding: 0;
                     }
-                    span{
+                    h5{
                         font-size: 10px;
                         line-height: 12px;
                         letter-spacing: 1px;
@@ -2686,7 +2685,7 @@ a{
                     padding-bottom: 0px;
                     padding-top: 25px;
                 }
-                p{
+                h2{
                     font-size: 22px;
                     line-height: 28px;
                     padding-bottom: 30px;
@@ -2815,7 +2814,7 @@ a{
                 padding-bottom: 0px;
                 padding-top: 15px;
             }
-            p{
+            h2{
                 font-size: 20px;
                 line-height: 26px;
                 padding-bottom: 20px;
@@ -2926,7 +2925,7 @@ a{
                     }
                 }
             }
-            &-span{
+            &-h2{
                 text-align: center;
                 padding-left: 0;
                 font-size: 12px;
@@ -3090,7 +3089,7 @@ a{
             line-height: 26px;
             padding: 0;
         }
-        span{
+        h5{
             font-size: 10px;
             line-height: 12px;
             letter-spacing: 1px;
@@ -3256,7 +3255,7 @@ a{
                     }
                 }
             }
-            &-span{
+            &-h2{
                 text-align: center;
                 padding-left: 0;
                 font-size: 12px;
