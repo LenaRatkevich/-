@@ -82,13 +82,11 @@ padding-bottom: 3px;
     &__wrap{
         background-image: url(../img/main.svg);
         background-position: center;
-
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
     }
     &-circle{
-        justify-content: flex-end;
         display: flex;
         padding: 53px 46px;
         background-color:black;
@@ -167,13 +165,11 @@ padding-bottom: 3px;
         padding: 0 235px;
         margin-right: 296px;
         img{
+            top: 0; 
+            left: 0; 
+            height: 88%;
             position: absolute; 
-        top: 0; 
-        left: 0; 
-        height: 88%;
-        
-        &.back { z-index: 1; };
-        &.front{ z-index: 2; };
+
         &:nth-child(2){
             height: 676px;
             padding-left: 172px;
@@ -184,7 +180,6 @@ padding-bottom: 3px;
     }
 &-button{
     display: flex;
-    justify-content: flex-start;
     background-color: #000;
     border-radius: 32px;
     color: white;
