@@ -95,9 +95,6 @@
           flex-direction: column;
 }
 .main-circle {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,16 +195,10 @@
   margin-right: 296px;
 }
 .malachite__wrap-img img {
-  position: absolute;
   top: 0;
   left: 0;
   height: 88%;
-}
-.malachite__wrap-img img.back {
-  z-index: 1;
-}
-.malachite__wrap-img img.front {
-  z-index: 2;
+  position: absolute;
 }
 .malachite__wrap-img img:nth-child(2) {
   height: 676px;
@@ -218,9 +209,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   background-color: #000;
   border-radius: 32px;
   color: white;
