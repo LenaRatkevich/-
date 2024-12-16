@@ -1,1 +1,3933 @@
+@font-face {
+  font-family: "RethinkSans-Medium";
+  src: url("../fonts/Rethink_Sans/RethinkSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RethinkSans-Regular";
+  src: url("../fonts/Rethink_Sans/RethinkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant-Regular";
+  src: url("../fonts/Cormorant-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+}
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #EAC1BF;
+}
+.header__nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 56px 0 52px;
+}
+.header__nav p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 70px;
+  padding-top: 4px;
+  font-family: "RethinkSans-Medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header .nav__logo-img {
+  max-width: 36px;
+  margin: 23px 0;
+}
+.header .nav__logo-img:hover {
+  cursor: pointer;
+}
+.header .nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-bottom: 3px;
+}
+.header .nav__icon-img {
+  max-width: 30px;
+}
+.header .nav__icon-img:hover {
+  cursor: pointer;
+}
+.header .nav__icon-img:first-of-type {
+  margin-right: 42px;
+}
+
+.main {
+  border-bottom: 1px solid #EAC1BF;
+  background-color: #fbf5f9;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.main__wrap {
+  background-image: url(../img/main.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 53px 46px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-right: 52px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.main-circle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+.main-h1 {
+  padding-top: 169px;
+  padding-bottom: 22px;
+  line-height: 120px;
+  font-family: "Cormorant-Regular", sans-serif;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 118px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  white-space: pre-line;
+}
+
+.crystalscom {
+  background-color: white;
+  border-bottom: 1px solid #EAC1BF;
+}
+.crystalscom__content {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 28px 0 24px;
+  letter-spacing: 1px;
+}
+
+.malachite {
+  background-image: url(../img/Rectangle33.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #EAC1BF;
+}
+.malachite__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.malachite__wrap-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 131px;
+  padding-bottom: 186px;
+  padding-top: 106px;
+}
+.malachite__wrap h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding-bottom: 83px;
+  padding-right: 92px;
+  line-height: 68px;
+}
+.malachite__wrap-img {
+  position: relative;
+  padding: 0 235px;
+  margin-right: 296px;
+}
+.malachite__wrap-img img {
+  top: 0;
+  left: 0;
+  height: 88%;
+  position: absolute;
+}
+.malachite__wrap-img img:nth-child(2) {
+  height: 676px;
+  padding-left: 172px;
+  margin-top: 76px;
+}
+.malachite-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  border-radius: 32px;
+  color: white;
+  font-size: 20px;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 46px;
+  margin-right: auto;
+}
+.malachite-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
+          box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
+}
+
+.crystalvideo-button {
+  position: absolute;
+  border-radius: 32px;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "RethinkSans-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 12px 25px;
+  margin-top: 536px;
+}
+.crystalvideo-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF;
+          box-shadow: 0 0 0 2px #EAC1BF;
+}
+.crystalvideo-wrap {
+  padding: 188px 127px 62px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (2fr)[1];
+  grid-template-rows: repeat(1, 2fr);
+}
+.crystalvideo-wrap > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.crystalvideo-wrap > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.crystalvideo-wrap__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.crystalvideo-wrap__video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+  height: 102%;
+  width: 99%;
+}
+.crystalvideo-wrap__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 63px 120px 15px 255px;
+  gap: 37px;
+}
+.crystalvideo-wrap__comment__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 17px;
+  line-height: 24px;
+}
+.crystalvideo-wrap__comment__div:nth-of-type(2) {
+  gap: 16px;
+}
+.crystalvideo-wrap__comment__div:nth-of-type(3) {
+  gap: 20px;
+}
+.crystalvideo-wrap__comment__div p {
+  font-size: 16px;
+}
+.crystalvideo-wrap__comment__div h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.crystalvideo-wrap__comment__div img {
+  height: 27px;
+  max-width: 27px;
+}
+
+.popularcrystals {
+  border-bottom: 1px solid #EAC1BF;
+}
+.popularcrystals__wrap {
+  margin-top: auto;
+  padding-bottom: 19px;
+}
+.popularcrystals__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 75px 162px;
+  margin: 0 auto;
+  gap: 55px;
+}
+.popularcrystals__ul {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  padding-left: 0;
+  padding-top: 22px;
+  margin-right: 58px;
+  list-style: none;
+}
+.popularcrystals__ul li {
+  position: relative;
+  padding-left: 68px;
+  margin-bottom: 31px;
+  line-height: 48px;
+}
+.popularcrystals__ul li:nth-child(1)::before {
+  background: radial-gradient(circle, rgba(250, 204, 191, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
+  padding: 3px;
+}
+.popularcrystals__ul li:nth-child(2)::before {
+  background: radial-gradient(circle, rgba(227, 216, 193, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
+  padding: 3px;
+}
+.popularcrystals__ul li:nth-child(3)::before {
+  background: radial-gradient(circle, rgba(135, 140, 143, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
+  padding: 3px;
+}
+.popularcrystals__ul li:nth-child(4)::before {
+  background: radial-gradient(circle, rgba(192, 157, 189, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
+  padding: 3px;
+}
+.popularcrystals__ul li:nth-child(5)::before {
+  background: radial-gradient(circle, rgba(250, 237, 163, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
+  padding: 3px;
+}
+.popularcrystals-h2 {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 75px;
+  letter-spacing: 1px;
+}
+.popularcrystals__button {
+  background-image: url(../img/button.png);
+  padding: 11px 39px;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 600;
+  border-radius: 32px;
+  border: none;
+  margin-top: 23px;
+  margin-left: 75px;
+}
+.popularcrystals__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #ffd968;
+          box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #ffd968;
+}
+.popularcrystals .crystal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../img/Shadow.png);
+  background-repeat: no-repeat;
+  padding-top: 270px;
+}
+.popularcrystals .crystal-img {
+  height: 256px;
+  padding: 83px 43px 80px;
+}
+.popularcrystals .crystal__div {
+  padding: 38px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 16px;
+  background-color: white;
+  border: 1.5px solid #EAC1BF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popularcrystals .crystal__div:first-child {
+  margin-right: 24px;
+}
+.popularcrystals .crystal__div:first-child :nth-of-type(2) {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.popularcrystals .crystal__div p {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.shopbyintention {
+  border-bottom: 1px solid #EAC1BF;
+}
+.shopbyintention-img {
+  padding-bottom: 25px;
+}
+.shopbyintention h3 {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  text-align: center;
+  padding-bottom: 92px;
+  margin-top: 101px;
+}
+.shopbyintention__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 86px;
+}
+.shopbyintention__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 123px;
+  text-decoration: none;
+}
+.shopbyintention__div:nth-child(1) p:hover {
+  text-shadow: 0px 0px 20px #f72b6c;
+  color: #f72b6c;
+}
+.shopbyintention__div:nth-child(2) p:hover {
+  text-shadow: 0px 0px 20px #37bb0b;
+  color: #37bb0b;
+}
+.shopbyintention__div:nth-child(3) p:hover {
+  text-shadow: 0px 0px 20px #ffb005;
+  color: #ffb005;
+}
+.shopbyintention__div:nth-child(4) p:hover {
+  text-shadow: 0px 0px 20px #340bbb;
+  color: #340bbb;
+}
+.shopbyintention__div:nth-child(5) p:hover {
+  text-shadow: 0px 0px 20px #279df7;
+  color: #279df7;
+}
+.shopbyintention__div:nth-child(6) p:hover {
+  text-shadow: 0px 0px 20px #d3cc03;
+  color: #d3cc03;
+}
+.shopbyintention__div:nth-child(7) p:hover {
+  text-shadow: 0px 0px 20px #920bbb;
+  color: #920bbb;
+}
+.shopbyintention__div p {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+}
+.shopbyintention a {
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+}
+.shopbyintention a:hover {
+  text-shadow: 0px 0px 30px #f241c6;
+  color: #f241c6;
+}
+
+.giftsofgratitude {
+  border-bottom: 1px solid #EAC1BF;
+}
+.giftsofgratitude h4 {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 500;
+  font-size: 116px;
+  text-align: center;
+  padding-bottom: 90px;
+  margin-top: 120px;
+}
+.giftsofgratitude__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 58px;
+  gap: 16px;
+  margin-bottom: 167px;
+}
+.giftsofgratitude__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+.giftsofgratitude__div-img {
+  position: relative;
+}
+.giftsofgratitude__div-img .add {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.giftsofgratitude__div-img .add:hover {
+  opacity: 1;
+}
+.giftsofgratitude__div-name {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+}
+.giftsofgratitude__div .price {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.joinourcrystalclub {
+  border-bottom: 1px solid #EAC1BF;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(234, 193, 191, 0.5)), to(rgb(255, 255, 255)));
+  background: linear-gradient(to right, rgba(234, 193, 191, 0.5), rgb(255, 255, 255));
+}
+.joinourcrystalclub__pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 24px;
+}
+.joinourcrystalclub__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 64px 57px 63px 63px;
+}
+.joinourcrystalclub__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #000;
+  border-radius: 32px;
+  color: white;
+  font-size: 20px;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 11px 32px;
+  margin-right: auto;
+}
+.joinourcrystalclub__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px rgb(242, 209, 207), 0 0 0 3px #000000;
+          box-shadow: 0 0 0 2px rgb(242, 209, 207), 0 0 0 3px #000000;
+}
+.joinourcrystalclub__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 9px;
+  gap: 24px;
+}
+.joinourcrystalclub__info h5 {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 56px;
+  padding-right: 40px;
+}
+.joinourcrystalclub__info-p {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 80px;
+  font-size: 16px;
+}
+
+.comment__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 44px 55px 44px 59px;
+}
+.comment__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 128px;
+}
+.comment__comment-p {
+  font-family: "Cormorant-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 72px;
+  text-align: center;
+  padding: 2px 20px 11px;
+}
+.comment__comment h5 {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.comment__face {
+  height: 95px;
+  width: 95px;
+}
+
+.crystalsdotcom__title {
+  margin: 30px 58px 97px;
+}
+.crystalsdotcom__wrap {
+  margin: 60px 57px;
+}
+.crystalsdotcom__wrap h6 {
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 27px;
+}
+.crystalsdotcom__pictures {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 16px;
+}
+.crystalsdotcom__pictures > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.crystalsdotcom__pictures > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.crystalsdotcom__pictures > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.crystalsdotcom__pictures > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.crystalsdotcom__pictures > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+.crystalsdotcom__pictures > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+.crystalsdotcom__pictures-img {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  -ms-grid-row-span: 1;
+  grid-row: span 1;
+}
+.crystalsdotcom__back {
+  background-image: url(../img/footer.png);
+}
+.crystalsdotcom__back-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 27px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 27px;
+  padding-left: 79px;
+  max-width: 800px;
+}
+.crystalsdotcom__back-footer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.crystalsdotcom__back-footer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.crystalsdotcom__back-footer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.crystalsdotcom__back-footer > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.crystalsdotcom__back-footer > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.crystalsdotcom__back-footer > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.crystalsdotcom__back-footer > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.crystalsdotcom__back-footer > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.crystalsdotcom__back-footer > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+.crystalsdotcom__back-footer > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.crystalsdotcom__back-footer a {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+  -ms-grid-row-span: 1;
+  grid-row: span 1;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 130px;
+}
+.crystalsdotcom__back-footer a:nth-child(4) {
+  padding-left: 8px;
+}
+.crystalsdotcom__back-footer a:nth-child(5) {
+  padding-left: 2px;
+}
+.crystalsdotcom__back-footer a:nth-child(9) {
+  padding-left: 9px;
+}
+.crystalsdotcom__back-footer a:nth-child(10) {
+  padding-left: 3px;
+}
+.crystalsdotcom__back-p {
+  text-transform: none;
+  font-size: 12px;
+  padding: 51px 0 73px 75px;
+  font-family: "RethinkSans-Regular", sans-serif;
+  font-weight: 400;
+}
+.crystalsdotcom__back-p span {
+  text-transform: uppercase;
+}
+.crystalsdotcom a {
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+}
+.crystalsdotcom a:hover {
+  text-shadow: 0px 0px 30px #f241c6;
+  color: #f241c6;
+}
+
+#scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9eeee), color-stop(51%, #ffd3d3), to(#f9eeee));
+  background-image: linear-gradient(to right, #f9eeee 0%, #ffd3d3 51%, #f9eeee 100%);
+}
+#scroll:hover {
+  background-position: right center;
+}
+#scroll img {
+  width: 45px;
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+  .header__nav {
+    margin: 0px 56px 0px 52px;
+  }
+  .header__nav p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .header .nav__logo-img {
+    margin: 26px 0;
+    max-width: 32px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 40px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 64px 53px;
+    margin-bottom: 55px;
+    margin-right: 68px;
+    font-size: 24px;
+  }
+  .main-h1 {
+    padding-top: 195px;
+    padding-bottom: 0;
+    line-height: 120px;
+    font-size: 124px;
+  }
+  .crystalscom__content {
+    font-size: 26px;
+    padding: 30px 0 28px;
+  }
+  .crystalscom__content-img {
+    height: 20px;
+  }
+  .malachite__wrap {
+    padding: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 50px;
+    padding-bottom: 156px;
+    padding-top: 116px;
+  }
+  .malachite__wrap h2 {
+    font-size: 52px;
+    padding-bottom: 83px;
+    padding-right: 0px;
+  }
+  .malachite__wrap-img {
+    padding: 0 235px;
+    margin-right: 284px;
+  }
+  .malachite__wrap-img img {
+    height: 90%;
+    padding-left: 50px;
+  }
+  .malachite__wrap-img img:nth-child(2) {
+    height: 640px;
+    padding-left: auto;
+    margin-top: 30px;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 22px;
+    padding: 13px 46px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 20px;
+    padding: 12px 26px;
+    margin-top: 92%;
+  }
+  .crystalvideo-wrap {
+    padding: 170px 85px 62px;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 102%;
+    width: 99%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 100px 70px 100px 110px;
+    gap: 37px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 17px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 16px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 20px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 20px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 18px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 27px;
+    max-width: 27px;
+  }
+  .popularcrystals__ul {
+    font-size: 52px;
+    padding-left: 0px;
+    margin-right: 60px;
+  }
+  .popularcrystals-h2 {
+    padding-left: 73px;
+  }
+  .popularcrystals__button {
+    margin-left: 70px;
+  }
+  .popularcrystals .crystal__div {
+    padding: 35px 0 38px;
+  }
+  .popularcrystals .crystal__div p {
+    font-size: 18px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 20px;
+  }
+  .shopbyintention h3 {
+    font-size: 50px;
+  }
+  .shopbyintention__wrap {
+    gap: 100px;
+  }
+  .shopbyintention__div p {
+    font-size: 20px;
+  }
+  .giftsofgratitude h4 {
+    font-size: 116px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 20px 150px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 50px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  .joinourcrystalclub__wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .joinourcrystalclub__pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 298px;
+  }
+  .joinourcrystalclub__button {
+    font-size: 22px;
+    padding: 11px 36px;
+  }
+  .joinourcrystalclub__info {
+    padding-top: 0px;
+    gap: 20px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 50px;
+    line-height: 56px;
+    padding-right: 40px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 28px;
+    padding-right: 60px;
+    font-size: 18px;
+  }
+  .comment__comment {
+    gap: 45px;
+    padding-top: 128px;
+  }
+  .comment__comment-p {
+    font-size: 50px;
+    line-height: 72px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 105px;
+    width: 105px;
+  }
+  .crystalsdotcom__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+    height: 140px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .crystalsdotcom__wrap {
+    margin: 60px 40px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 27px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 5px;
+    -ms-grid-columns: 220px 5px 220px 5px 220px 5px 220px 5px 220px 5px 220px;
+    grid-template-columns: repeat(6, 220px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .crystalsdotcom__pictures-img {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    height: 220px;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 1fr 27px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 27px;
+    padding-left: 79px;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(5) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(10) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 18px;
+    line-height: 18px;
+    width: 140px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 14px;
+    padding: 51px 0 73px 75px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
+  .container {
+    max-width: 1439px;
+  }
+  .header__nav {
+    margin: 0px 46px 0px 42px;
+  }
+  .header__nav p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    padding: 0;
+  }
+  .header .nav__logo-img {
+    margin: 22px 0;
+    max-width: 32px;
+  }
+  .header .nav__icon-img {
+    max-width: 26px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 30px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 45px 42px;
+    margin-bottom: 35px;
+    margin-right: 48px;
+    font-size: 18px;
+  }
+  .main-h1 {
+    padding-top: 170px;
+    padding-bottom: 30px;
+    font-size: 110px;
+    line-height: 118px;
+  }
+  .crystalscom__content {
+    font-size: 20px;
+    padding: 26px 0 22px;
+  }
+  .crystalscom__content-img {
+    height: 16px;
+  }
+  .malachite__wrap {
+    padding: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 50px;
+    padding-bottom: 100px;
+    padding-top: 116px;
+  }
+  .malachite__wrap h2 {
+    font-size: 48px;
+    padding-bottom: 63px;
+    padding-right: 0px;
+  }
+  .malachite__wrap-img {
+    padding: 0 235px;
+    margin-right: 234px;
+  }
+  .malachite__wrap-img img {
+    height: 85%;
+    padding-left: 50px;
+  }
+  .malachite__wrap-img img:nth-child(2) {
+    height: 610px;
+    padding-left: auto;
+    margin-top: 30px;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 22px;
+    padding: 13px 46px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 20px;
+    padding: 12px 26px;
+    margin-top: 84%;
+  }
+  .crystalvideo-wrap {
+    padding: 150px 75px 62px;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 98%;
+    width: 96%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 70px 70px 70px 150px;
+    gap: 37px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 17px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 16px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 20px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 16px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 18px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 27px;
+    max-width: 27px;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 55px;
+  }
+  .popularcrystals__ul {
+    padding-top: 22px;
+    margin-right: 58px;
+  }
+  .popularcrystals-h2 {
+    padding-left: 75px;
+  }
+  .popularcrystals__button {
+    margin-top: 20px;
+    margin-left: 75px;
+  }
+  .popularcrystals .crystal {
+    padding-top: 260px;
+  }
+  .shopbyintention h3 {
+    font-size: 46px;
+    padding-bottom: 70px;
+    margin-top: 70px;
+  }
+  .shopbyintention__wrap {
+    gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 40px;
+  }
+  .shopbyintention__div {
+    padding-bottom: 100px;
+  }
+  .shopbyintention__div p {
+    font-size: 18px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 90px;
+    padding-bottom: 60px;
+    font-size: 95px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 20px 80px;
+  }
+  .giftsofgratitude__div .add {
+    height: 280px;
+  }
+  .giftsofgratitude__div .main {
+    height: 280px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 48px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 18px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 260px;
+  }
+  .joinourcrystalclub__wrap {
+    padding: 50px 40px 53px 40px;
+  }
+  .joinourcrystalclub__button {
+    font-size: 20px;
+    padding: 9px 32px;
+  }
+  .joinourcrystalclub__info {
+    padding-top: 0px;
+    gap: 14px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 44px;
+    line-height: 52px;
+    padding-right: 20px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 24px;
+    padding-right: 40px;
+    font-size: 16px;
+  }
+  .comment__wrap {
+    margin: 34px 40px;
+  }
+  .comment__comment {
+    gap: 35px;
+    padding-top: 110px;
+  }
+  .comment__comment-p {
+    font-size: 42px;
+    line-height: 65px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 90px;
+    width: 90px;
+  }
+  .crystalsdotcom__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 60px auto;
+    height: 125px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .crystalsdotcom__wrap {
+    margin: 60px 40px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 27px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 5px;
+    -ms-grid-columns: 195px 5px 195px 5px 195px 5px 195px 5px 195px 5px 195px;
+    grid-template-columns: repeat(6, 195px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .crystalsdotcom__pictures-img {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    height: 195px;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 25px;
+    padding-left: 60px;
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 16px;
+    line-height: 18px;
+    width: 140px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 14px;
+    padding: 51px 0 73px 60px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .header__nav {
+    margin: 0px 46px 0px 42px;
+  }
+  .header__nav p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    padding: 0;
+  }
+  .header .nav__logo-img {
+    margin: 22px 0;
+    max-width: 32px;
+  }
+  .header .nav__icon-img {
+    max-width: 26px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 30px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 40px 37px;
+    margin-bottom: 35px;
+    margin-right: 48px;
+    font-size: 18px;
+  }
+  .main-h1 {
+    padding-top: 140px;
+    padding-bottom: 0;
+    font-size: 104px;
+    line-height: 104px;
+  }
+  .crystalscom__content {
+    font-size: 20px;
+    padding: 26px 0 22px;
+  }
+  .crystalscom__content-img {
+    height: 16px;
+  }
+  .malachite__wrap {
+    padding: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 50px;
+    padding-bottom: 100px;
+    padding-top: 116px;
+  }
+  .malachite__wrap h2 {
+    font-size: 40px;
+    line-height: 60px;
+    padding-bottom: 50px;
+    padding-right: 0px;
+  }
+  .malachite__wrap-img {
+    padding: 0 235px;
+    margin-right: 100px;
+  }
+  .malachite__wrap-img img {
+    height: 75%;
+    padding-left: 50px;
+  }
+  .malachite__wrap-img img:nth-child(2) {
+    height: 560px;
+    padding-left: 100px;
+    margin-top: 20px;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 22px;
+    padding: 10px 42px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 14px;
+    padding: 9px 22px;
+    margin-top: 81%;
+  }
+  .crystalvideo-wrap {
+    padding: 130px 60px 58px;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 98%;
+    width: 92%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px 10px 40px 100px;
+    gap: 25px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 10px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 16px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 20px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 14px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 20px;
+    max-width: 20px;
+  }
+  .popularcrystals__wrap {
+    margin-top: auto;
+    padding-bottom: 0px;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 0px;
+    padding: 0px 65px 152px;
+  }
+  .popularcrystals__ul {
+    padding-top: 22px;
+    margin-right: 35px;
+    font-size: 44px;
+  }
+  .popularcrystals-h2 {
+    padding-left: 73px;
+  }
+  .popularcrystals__button {
+    padding: 10px 30px;
+    margin-top: 5px;
+    margin-left: 70px;
+    font-size: 18px;
+  }
+  .popularcrystals .crystal {
+    padding-top: 240px;
+    background-size: 600px;
+  }
+  .popularcrystals .crystal-img {
+    height: 230px;
+    padding: 75px 33px 70px;
+  }
+  .popularcrystals .crystal__div {
+    padding: 35px 0 38px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 20px;
+  }
+  .shopbyintention-img {
+    width: 90px;
+  }
+  .shopbyintention h3 {
+    font-size: 44px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+  }
+  .shopbyintention__wrap {
+    gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 30px;
+  }
+  .shopbyintention__div {
+    padding-bottom: 90px;
+  }
+  .shopbyintention__div p {
+    font-size: 18px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 80px;
+    padding-bottom: 50px;
+    font-size: 82px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0px 20px 70px;
+    gap: 14px;
+  }
+  .giftsofgratitude__div {
+    gap: 0;
+  }
+  .giftsofgratitude__div .add {
+    height: 235px;
+  }
+  .giftsofgratitude__div .main {
+    height: 235px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 42px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 10px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 220px;
+  }
+  .joinourcrystalclub__wrap {
+    padding: 50px 50px 53px 50px;
+  }
+  .joinourcrystalclub__button {
+    font-size: 16px;
+    padding: 7px 30px;
+  }
+  .joinourcrystalclub__info {
+    padding-top: 0px;
+    gap: 8px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 40px;
+    line-height: 48px;
+    padding-right: 15px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 22px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+  .comment__img {
+    height: 550px;
+  }
+  .comment__img:nth-child(4) {
+    height: 25px;
+  }
+  .comment__wrap {
+    margin: 34px 40px;
+  }
+  .comment__comment {
+    gap: 25px;
+    padding-top: 90px;
+  }
+  .comment__comment-p {
+    font-size: 38px;
+    line-height: 55px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 80px;
+    width: 80px;
+  }
+  .crystalsdotcom__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px auto;
+    height: 105px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .crystalsdotcom__wrap {
+    margin: 60px 40px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 5px;
+    -ms-grid-columns: 160px 5px 160px 5px 160px 5px 160px 5px 160px 5px 160px;
+    grid-template-columns: repeat(6, 160px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    height: 160px;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 18px;
+    padding-left: 50px;
+    -ms-grid-columns: (130px)[5];
+    grid-template-columns: repeat(5, 130px);
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 12px;
+    line-height: 14px;
+    width: 130px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 12px;
+    padding: 25px 0 40px 50px;
+  }
+  #scroll img {
+    width: 35px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (min-width: 1025px) and (max-width: 1066px) {
+  .container {
+    max-width: 1066px;
+  }
+  .popularcrystals__wrap {
+    margin-top: auto;
+    padding-bottom: 0px;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 0px;
+    padding: 0px 63px 152px;
+  }
+  .popularcrystals__ul {
+    padding-top: 22px;
+    margin-right: 25px;
+    font-size: 42px;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 25px;
+  }
+  .popularcrystals-h2 {
+    padding-left: 73px;
+  }
+  .popularcrystals__button {
+    padding: 10px 30px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 70px;
+    font-size: 17px;
+  }
+  .popularcrystals .crystal {
+    padding-top: 240px;
+  }
+  .popularcrystals .crystal-img {
+    height: 220px;
+    padding: 63px 33px 58px;
+  }
+  .popularcrystals .crystal__div {
+    padding: 35px 0 38px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 17px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 70px;
+    padding-bottom: 40px;
+    font-size: 80px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0px 15px 60px;
+    gap: 10px;
+  }
+  .giftsofgratitude__div {
+    gap: 0;
+  }
+  .giftsofgratitude__div .add {
+    height: 225px;
+  }
+  .giftsofgratitude__div .main {
+    height: 225px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 42px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 4px;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 10px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 220px;
+  }
+  .joinourcrystalclub__wrap {
+    padding: 45px 35px 45px 35px;
+  }
+  .joinourcrystalclub__button {
+    font-size: 16px;
+    padding: 7px 30px;
+  }
+  .joinourcrystalclub__info {
+    padding-top: 0px;
+    gap: 8px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 40px;
+    line-height: 48px;
+    padding-right: 15px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 22px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+  .crystalsdotcom__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px auto;
+    height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .crystalsdotcom__wrap {
+    margin: 60px 40px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 5px;
+    -ms-grid-columns: 150px 5px 150px 5px 150px 5px 150px 5px 150px 5px 150px;
+    grid-template-columns: repeat(6, 150px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    height: 150px;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 18px;
+    padding-left: 40px;
+    -ms-grid-columns: (120px)[5];
+    grid-template-columns: repeat(5, 120px);
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 12px;
+    line-height: 14px;
+    width: 120px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 12px;
+    padding: 25px 0 40px 40px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header__nav {
+    margin: 0px 40px 0px 36px;
+  }
+  .header__nav p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 12px;
+    padding: 0;
+  }
+  .header .nav__logo-img {
+    margin: 20px 0;
+    max-width: 26px;
+  }
+  .header .nav__icon-img {
+    max-width: 25px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 28px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 38px 34px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .main-h1 {
+    padding-top: 130px;
+    padding-bottom: 0;
+    font-size: 95px;
+    line-height: 95px;
+  }
+  .crystalscom__content {
+    font-size: 16px;
+    padding: 20px 0 16px;
+  }
+  .crystalscom__content-img {
+    height: 12px;
+  }
+  .malachite__wrap {
+    padding: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 30px;
+    padding-bottom: 90px;
+    padding-top: 95px;
+  }
+  .malachite__wrap h2 {
+    font-size: 36px;
+    line-height: 46px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+  }
+  .malachite__wrap-img {
+    padding: 0 155px;
+    margin-right: 0px;
+  }
+  .malachite__wrap-img img:nth-child(1) {
+    display: none;
+  }
+  .malachite__wrap-img img:nth-child(2) {
+    height: 400px;
+    padding-left: 0px;
+    margin-top: 30px;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 18px;
+    padding: 7px 38px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 12px;
+    padding: 7px 22px;
+    margin-top: 78%;
+  }
+  .crystalvideo-wrap {
+    padding: 100px 20px 40px;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 96%;
+    width: 90%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px 10px 30px 20px;
+    gap: 20px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 10px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 16px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 20px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 12px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 18px;
+    max-width: 18px;
+  }
+  .popularcrystals__wrap {
+    margin-top: auto;
+    padding-bottom: 0px;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 0px;
+    padding: 0px 20px 100px;
+  }
+  .popularcrystals__ul {
+    padding-top: 12px;
+    margin-right: 15px;
+    font-size: 32px;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 12px;
+    padding-left: 60px;
+  }
+  .popularcrystals-h2 {
+    padding-left: 63px;
+    font-size: 14px;
+  }
+  .popularcrystals__button {
+    padding: 9px 20px;
+    margin-top: 0px;
+    margin-left: 62px;
+    font-size: 14px;
+  }
+  .popularcrystals .crystal {
+    padding-top: 180px;
+    background-size: 500px;
+  }
+  .popularcrystals .crystal-img {
+    height: 180px;
+    padding: 48px 20px 45px;
+  }
+  .popularcrystals .crystal__div {
+    padding: 28px 0 30px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 10px;
+  }
+  .popularcrystals .crystal__div p {
+    font-size: 14px;
+  }
+  .shopbyintention-img {
+    width: 70px;
+  }
+  .shopbyintention h3 {
+    font-size: 38px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+  }
+  .shopbyintention__wrap {
+    gap: 6px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 30px;
+  }
+  .shopbyintention__div {
+    padding-bottom: 80px;
+  }
+  .shopbyintention__div p {
+    font-size: 16px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 55px;
+    padding-bottom: 40px;
+    font-size: 72px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0px 15px 60px;
+    gap: 7px;
+  }
+  .giftsofgratitude__div {
+    gap: 0;
+  }
+  .giftsofgratitude__div .add {
+    height: 258px;
+  }
+  .giftsofgratitude__div .main {
+    height: 258px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 46px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 4px;
+  }
+  .giftsofgratitude__div:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 10px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 195px;
+  }
+  .joinourcrystalclub__pictures-img:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__wrap {
+    padding: 45px 50px 45px 50px;
+  }
+  .joinourcrystalclub__button {
+    font-size: 16px;
+    padding: 8px 28px;
+  }
+  .joinourcrystalclub__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0px;
+    gap: 15px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 40px;
+    line-height: 44px;
+    padding-right: 15px;
+  }
+  .joinourcrystalclub__info-p {
+    display: none;
+  }
+  .comment__img {
+    height: 400px;
+    width: 180px;
+  }
+  .comment__img:nth-child(4) {
+    height: 18px;
+    width: 19px;
+  }
+  .comment__wrap {
+    margin: 25px 30px;
+  }
+  .comment__comment {
+    gap: 15px;
+    padding-top: 95px;
+  }
+  .comment__comment-p {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 50px;
+    width: 50px;
+  }
+  .crystalsdotcom__title {
+    display: none;
+  }
+  .crystalsdotcom__wrap {
+    margin: 40px 20px 60px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 3px;
+    -ms-grid-columns: 140px 3px 140px 3px 140px 3px 140px 3px 140px;
+    grid-template-columns: repeat(5, 140px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 1;
+    grid-row: span 1;
+    height: 140px;
+  }
+  .crystalsdotcom__pictures-img:nth-child(5) {
+    display: none;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 14px;
+    padding-left: 40px;
+    -ms-grid-columns: (120px)[5];
+    grid-template-columns: repeat(5, 120px);
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 12px;
+    line-height: 14px;
+    width: 120px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 12px;
+    padding: 35px 0 60px 40px;
+  }
+  #scroll {
+    bottom: 15px;
+    right: 15px;
+  }
+  #scroll img {
+    width: 30px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header__nav {
+    margin: 0 30px;
+  }
+  .header__nav p {
+    font-size: 12px;
+    padding: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .header .nav__logo-img {
+    margin: 14px 0;
+    max-width: 20px;
+  }
+  .header .nav__icon-img {
+    max-width: 18px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 22px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 28px 26px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .main-h1 {
+    padding-top: 90px;
+    padding-bottom: 0;
+    font-size: 68px;
+    line-height: 75px;
+  }
+  .crystalscom__content {
+    font-size: 14px;
+    padding: 13px 0 8px;
+  }
+  .crystalscom__content-img {
+    height: 12px;
+  }
+  .popularcrystals__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: auto;
+    padding-bottom: 0px;
+    gap: 10px;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    padding: 40px 25px;
+  }
+  .popularcrystals__ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px 80px 1fr 1fr 1fr;
+    grid-template-columns: 150px 80px 1fr 1fr 1fr;
+    -ms-grid-rows: (1fr)[1];
+    grid-template-rows: repeat(1, 1fr);
+    padding-top: 12px;
+    margin-right: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 28px;
+  }
+  .popularcrystals__ul > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  .popularcrystals__ul > *:nth-child(5) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 12px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .popularcrystals__ul li:nth-child(1) {
+    text-shadow: 0px 0px 20px #fd400c;
+  }
+  .popularcrystals__ul li:nth-child(2) {
+    text-shadow: 0px 0px 20px #ffae00;
+  }
+  .popularcrystals__ul li:nth-child(3) {
+    text-shadow: 0px 0px 20px #1979ac;
+  }
+  .popularcrystals__ul li:nth-child(4) {
+    text-shadow: 0px 0px 20px #c814b9;
+  }
+  .popularcrystals__ul li:nth-child(5) {
+    text-shadow: 0px 0px 20px #fdd703;
+  }
+  .popularcrystals__ul li::before {
+    display: none;
+  }
+  .popularcrystals-h2 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .popularcrystals__button {
+    padding: 8px 24px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .popularcrystals .crystal {
+    padding-top: 50px;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+  }
+  .popularcrystals .crystal-img {
+    height: 170px;
+    padding: 45px 45px 43px;
+  }
+  .popularcrystals .crystal__div {
+    -webkit-box-shadow: 0 0 40px #f0d5d4;
+            box-shadow: 0 0 40px #f0d5d4;
+    border: #EAC1BF;
+    padding: 28px 0;
+    margin: 0 auto;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 0;
+  }
+  .popularcrystals .crystal__div:first-child :nth-of-type(2) {
+    font-size: 12px;
+  }
+  .popularcrystals .crystal__div p {
+    font-size: 12px;
+  }
+  .shopbyintention-img {
+    width: 70px;
+  }
+  .shopbyintention h3 {
+    font-size: 34px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+  .shopbyintention__wrap {
+    gap: 3px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 20px;
+  }
+  .shopbyintention__div {
+    padding-bottom: 80px;
+  }
+  .shopbyintention__div p {
+    font-size: 14px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 55px;
+    padding-bottom: 45px;
+    font-size: 64px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 15px 60px;
+    gap: 45px;
+  }
+  .giftsofgratitude__div {
+    gap: 0;
+  }
+  .giftsofgratitude__div .add {
+    height: 280px;
+  }
+  .giftsofgratitude__div .main {
+    height: 280px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 46px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 15px;
+    padding-top: 4px;
+  }
+  .giftsofgratitude__div:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 10px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 170px;
+  }
+  .joinourcrystalclub__pictures-img:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+  }
+  .joinourcrystalclub__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    font-size: 14px;
+    padding: 5px 24px;
+  }
+  .joinourcrystalclub__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0px;
+    gap: 10px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 40px;
+    line-height: 42px;
+    padding-right: 0px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 20px;
+    padding: 0 100px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .comment__img {
+    height: 340px;
+    width: 130px;
+  }
+  .comment__img:nth-child(4) {
+    height: 15px;
+    width: 16px;
+  }
+  .comment__wrap {
+    margin: 25px 30px;
+  }
+  .comment__comment {
+    gap: 12px;
+    padding-top: 90px;
+  }
+  .comment__comment-p {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 40px;
+    width: 40px;
+  }
+  .crystalsdotcom__title {
+    display: none;
+  }
+  .crystalsdotcom__wrap {
+    margin: 40px 15px 40px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 1px;
+    -ms-grid-columns: 120px 1px 120px 1px 120px 1px 120px 1px 120px;
+    grid-template-columns: repeat(5, 120px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    height: 120px;
+  }
+  .crystalsdotcom__pictures-img:nth-child(5) {
+    display: none;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    row-gap: 14px;
+    padding-left: 20px;
+    -ms-grid-columns: (90px)[5];
+    grid-template-columns: repeat(5, 90px);
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 10px;
+    line-height: 14px;
+    width: 90px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 10px;
+    padding: 25px 0 40px 25px;
+  }
+  .malachite__wrap {
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 30px;
+    padding-bottom: 100px;
+    padding-top: 55px;
+  }
+  .malachite__wrap h2 {
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+  }
+  .malachite__wrap-img {
+    padding: 0 110px;
+    margin-right: 0px;
+  }
+  .malachite__wrap-img img:nth-child(1) {
+    display: none;
+  }
+  .malachite__wrap-img img:nth-child(2) {
+    height: 300px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 14px;
+    padding: 4px 28px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 10px;
+    padding: 4px 16px;
+    margin-top: 75%;
+  }
+  .crystalvideo-wrap {
+    padding: 70px 10px 40px;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 98%;
+    width: 88%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
+    gap: 7px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 8px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 8px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 8px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 10px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 14px;
+    max-width: 14px;
+  }
+  #scroll {
+    bottom: 15px;
+    right: 15px;
+  }
+  #scroll img {
+    width: 25px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 481px) and (max-width: 635px) {
+  .container {
+    max-width: 635px;
+  }
+  .crystalscom__content {
+    font-size: 14px;
+    padding: 13px 0 8px;
+  }
+  .crystalscom__content-img {
+    height: 10px;
+  }
+  .popularcrystals__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: auto;
+    padding-bottom: 0px;
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    padding: 40px 25px;
+  }
+  .popularcrystals__ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 0px;
+    margin-right: 0;
+    font-size: 28px;
+  }
+  .popularcrystals__ul > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 0;
+    padding-left: 0px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .popularcrystals__ul li:nth-child(1) {
+    text-shadow: 0px 0px 20px #fd400c;
+  }
+  .popularcrystals__ul li:nth-child(2) {
+    text-shadow: 0px 0px 20px #ffae00;
+  }
+  .popularcrystals__ul li:nth-child(3) {
+    text-shadow: 0px 0px 20px #1979ac;
+  }
+  .popularcrystals__ul li:nth-child(4) {
+    text-shadow: 0px 0px 20px #c814b9;
+  }
+  .popularcrystals__ul li:nth-child(5) {
+    text-shadow: 0px 0px 20px #fdd703;
+  }
+  .popularcrystals__ul li::before {
+    display: none;
+  }
+  .popularcrystals-h2 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .popularcrystals__button {
+    padding: 8px 24px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .popularcrystals .crystal {
+    padding-top: 50px;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+  }
+  .popularcrystals .crystal-img {
+    height: 150px;
+    padding: 25px 30px 25px;
+  }
+  .popularcrystals .crystal__div {
+    -webkit-box-shadow: 0 0 40px #f0d5d4;
+            box-shadow: 0 0 40px #f0d5d4;
+    border: #EAC1BF;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 0;
+  }
+  .popularcrystals .crystal__div p {
+    font-size: 12px;
+  }
+  .shopbyintention-img {
+    width: 55px;
+    padding-bottom: 15px;
+  }
+  .shopbyintention h3 {
+    font-size: 32px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+  }
+  .shopbyintention__wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid: 1.5;
+    gap: 5px;
+    margin: 30px 5px;
+  }
+  .shopbyintention__div {
+    padding-bottom: 10px;
+  }
+  .shopbyintention__div p {
+    font-size: 14px;
+  }
+  .comment__img {
+    height: 340px;
+    width: 130px;
+  }
+  .comment__img:nth-child(4) {
+    height: 12px;
+    width: 13px;
+  }
+  .comment__wrap {
+    margin: 18px 20px;
+  }
+  .comment__comment {
+    gap: 10px;
+    padding-top: 70px;
+  }
+  .comment__comment-p {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 40px;
+    width: 40px;
+  }
+  .crystalsdotcom__title {
+    display: none;
+  }
+  .crystalsdotcom__wrap {
+    margin: 40px 15px 30px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 1px;
+    -ms-grid-columns: 107px 1px 107px 1px 107px 1px 107px;
+    grid-template-columns: repeat(4, 107px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    height: 107px;
+  }
+  .crystalsdotcom__pictures-img:nth-child(3) {
+    display: none;
+  }
+  .crystalsdotcom__pictures-img:nth-child(5) {
+    display: none;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    row-gap: 10px;
+    padding-left: 20px;
+    -ms-grid-columns: (90px)[5];
+    grid-template-columns: repeat(5, 90px);
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 10px;
+    line-height: 14px;
+    width: 90px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 10px;
+    padding: 15px 0 40px 25px;
+  }
+  .malachite__wrap {
+    padding: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 25px;
+  }
+  .malachite__wrap h2 {
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+  }
+  .malachite__wrap-img {
+    display: none;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 12px;
+    padding: 4px 24px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 10px;
+    padding: 4px 16px;
+    margin-top: 45%;
+  }
+  .crystalvideo-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 2fr 15px 2fr;
+    grid-template-rows: repeat(2, 2fr);
+    padding: 50px 10px 20px;
+    gap: 15px;
+  }
+  .crystalvideo-wrap > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .crystalvideo-wrap > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 100%;
+    width: 50%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 40px;
+    gap: 5px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 5px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 5px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 5px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 12px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 14px;
+    max-width: 14px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+  .header__nav {
+    margin: 0 20px;
+  }
+  .header__nav p {
+    font-size: 10px;
+    padding: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .header .nav__logo-img {
+    margin: 8px 0;
+    max-width: 16px;
+  }
+  .header .nav__icon-img {
+    max-width: 16px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 18px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 25px 22px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .main-h1 {
+    padding-top: 80px;
+    padding-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .crystalscom__content {
+    font-size: 12px;
+    padding: 10px 0 6px;
+  }
+  .crystalscom__content-img {
+    height: 8px;
+  }
+  .malachite__wrap {
+    padding: 18px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .malachite__wrap-info {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+  }
+  .malachite__wrap h2 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+  }
+  .malachite__wrap-img {
+    display: none;
+  }
+  .malachite-button {
+    border-radius: 32px;
+    font-size: 12px;
+    padding: 4px 20px;
+    margin-right: auto;
+  }
+  .crystalvideo-button {
+    font-size: 10px;
+    padding: 4px 14px;
+    margin-top: 44%;
+  }
+  .crystalvideo-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 2fr 15px 2fr;
+    grid-template-rows: repeat(2, 2fr);
+    padding: 30px 10px 20px;
+    gap: 15px;
+  }
+  .crystalvideo-wrap > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .crystalvideo-wrap > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    height: 100%;
+    width: 50%;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 20px;
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 10px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 12px;
+    max-width: 12px;
+  }
+  .popularcrystals__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: auto;
+    padding-bottom: 0px;
+    gap: 7px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    padding: 40px 25px;
+  }
+  .popularcrystals__ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 0px;
+    margin-right: 0;
+    font-size: 22px;
+  }
+  .popularcrystals__ul > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 0;
+    padding-left: 0px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .popularcrystals__ul li:nth-child(1) {
+    text-shadow: 0px 0px 20px #fd400c;
+  }
+  .popularcrystals__ul li:nth-child(2) {
+    text-shadow: 0px 0px 20px #ffae00;
+  }
+  .popularcrystals__ul li:nth-child(3) {
+    text-shadow: 0px 0px 20px #1979ac;
+  }
+  .popularcrystals__ul li:nth-child(4) {
+    text-shadow: 0px 0px 20px #c814b9;
+  }
+  .popularcrystals__ul li:nth-child(5) {
+    text-shadow: 0px 0px 20px #fdd703;
+  }
+  .popularcrystals__ul li::before {
+    display: none;
+  }
+  .popularcrystals-h2 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .popularcrystals__button {
+    padding: 0 16px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .popularcrystals .crystal {
+    padding-top: 40px;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 7px;
+  }
+  .popularcrystals .crystal-img {
+    height: 140px;
+    padding: 40px 30px 40px;
+  }
+  .popularcrystals .crystal__div {
+    -webkit-box-shadow: 0 0 40px #f0d5d4;
+            box-shadow: 0 0 40px #f0d5d4;
+    border: #EAC1BF;
+    padding: 22px 0;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 0;
+  }
+  .popularcrystals .crystal__div:first-child :nth-of-type(2) {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .popularcrystals .crystal__div:nth-child(1) {
+    display: none;
+  }
+  .shopbyintention-img {
+    width: 44px;
+    padding-bottom: 15px;
+  }
+  .shopbyintention h3 {
+    font-size: 32px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+  }
+  .shopbyintention__wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr 5px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    margin: 30px 10px;
+  }
+  .shopbyintention__wrap > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .shopbyintention__wrap > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .shopbyintention__wrap > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .shopbyintention__wrap > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+  .shopbyintention__wrap > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .shopbyintention__wrap > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .shopbyintention__wrap > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .shopbyintention__wrap > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+  }
+  .shopbyintention__div {
+    padding-bottom: 10px;
+  }
+  .shopbyintention__div p {
+    font-size: 14px;
+  }
+  .giftsofgratitude h4 {
+    margin-top: 40px;
+    padding-bottom: 28px;
+    font-size: 42px;
+  }
+  .giftsofgratitude__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 15px 55px;
+    gap: 30px;
+  }
+  .giftsofgratitude__div {
+    gap: 0;
+  }
+  .giftsofgratitude__div .add {
+    height: 210px;
+  }
+  .giftsofgratitude__div .main {
+    height: 210px;
+  }
+  .giftsofgratitude__div-name {
+    font-size: 32px;
+  }
+  .giftsofgratitude__div .price {
+    font-size: 14px;
+    padding-top: 4px;
+  }
+  .giftsofgratitude__div:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__pictures {
+    gap: 10px;
+  }
+  .joinourcrystalclub__pictures-img {
+    height: 180px;
+  }
+  .joinourcrystalclub__pictures-img:nth-child(1) {
+    display: none;
+  }
+  .joinourcrystalclub__pictures-img:nth-child(2) {
+    display: none;
+  }
+  .joinourcrystalclub__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+  }
+  .joinourcrystalclub__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    font-size: 12px;
+    padding: 5px 24px;
+  }
+  .joinourcrystalclub__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0px;
+    gap: 10px;
+  }
+  .joinourcrystalclub__info h5 {
+    font-size: 34px;
+    line-height: 40px;
+    padding-right: 0px;
+  }
+  .joinourcrystalclub__info-p {
+    line-height: 18px;
+    padding: 0 80px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .comment__img {
+    display: none;
+  }
+  .comment__img:nth-child(4) {
+    height: 12px;
+    width: 13px;
+    display: block;
+  }
+  .comment__wrap {
+    margin: 18px 20px;
+  }
+  .comment__comment {
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .comment__comment-p {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0;
+  }
+  .comment__comment h5 {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+  }
+  .comment__face {
+    height: 40px;
+    width: 40px;
+  }
+  .crystalsdotcom__title {
+    display: none;
+  }
+  .crystalsdotcom__wrap {
+    margin: 40px 15px 30px;
+  }
+  .crystalsdotcom__wrap h6 {
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+  .crystalsdotcom__pictures {
+    gap: 1px;
+    -ms-grid-columns: 95px 1px 95px 1px 95px;
+    grid-template-columns: repeat(3, 95px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .crystalsdotcom__pictures-img {
+    height: 95px;
+  }
+  .crystalsdotcom__pictures-img:nth-child(2) {
+    display: none;
+  }
+  .crystalsdotcom__pictures-img:nth-child(3) {
+    display: none;
+  }
+  .crystalsdotcom__pictures-img:nth-child(5) {
+    display: none;
+  }
+  .crystalsdotcom__back {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+  }
+  .crystalsdotcom__back-footer {
+    row-gap: 5px;
+    padding-left: 15px;
+    -ms-grid-columns: (95px)[3];
+    grid-template-columns: repeat(3, 95px);
+    -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .crystalsdotcom__back-footer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(7) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(8) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(10) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(11) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+  }
+  .crystalsdotcom__back-footer > *:nth-child(12) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+  .crystalsdotcom__back-footer a {
+    font-size: 10px;
+    line-height: 10px;
+    width: 95px;
+  }
+  .crystalsdotcom__back-footer a:nth-child(4) {
+    padding-left: 0px;
+  }
+  .crystalsdotcom__back-footer a:nth-child(5) {
+    padding-left: 0px;
+  }
+  .crystalsdotcom__back-footer a:nth-child(9) {
+    padding-left: 0px;
+  }
+  .crystalsdotcom__back-footer a:nth-child(10) {
+    padding-left: 0px;
+  }
+  .crystalsdotcom__back-p {
+    font-size: 10px;
+    padding: 15px 0 30px 15px;
+  }
+  #scroll {
+    bottom: 10px;
+    right: 10px;
+  }
+  #scroll img {
+    width: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (max-width: 400px) {
+  .header__nav {
+    margin: 0 16px;
+  }
+  .header__nav p {
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .header .nav__logo-img {
+    margin: 8px 0;
+    max-width: 14px;
+  }
+  .header .nav__icon-img {
+    max-width: 14px;
+  }
+  .header .nav__icon-img:first-of-type {
+    margin-right: 16px;
+  }
+  .main__wrap {
+    background-size: cover;
+  }
+  .main-circle {
+    padding: 20px 18px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .main-h1 {
+    padding-top: 80px;
+    padding-bottom: 0;
+    font-size: 50px;
+    line-height: 48px;
+  }
+  .crystalscom__content {
+    font-size: 10px;
+    padding: 8px 0 4px;
+  }
+  .crystalscom__content-img {
+    height: 8px;
+  }
+  .popularcrystals__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: auto;
+    padding-bottom: 0px;
+    gap: 7px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    padding: 40px 25px;
+  }
+  .popularcrystals__ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 0px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .popularcrystals__ul > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .popularcrystals__ul > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .popularcrystals__ul > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .popularcrystals__ul li {
+    margin-bottom: 0;
+    padding-left: 0px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .popularcrystals__ul li:nth-child(1) {
+    text-shadow: 0px 0px 20px #fd400c;
+  }
+  .popularcrystals__ul li:nth-child(2) {
+    text-shadow: 0px 0px 20px #ffae00;
+  }
+  .popularcrystals__ul li:nth-child(3) {
+    text-shadow: 0px 0px 20px #1979ac;
+  }
+  .popularcrystals__ul li:nth-child(4) {
+    text-shadow: 0px 0px 20px #c814b9;
+  }
+  .popularcrystals__ul li:nth-child(5) {
+    text-shadow: 0px 0px 20px #fdd703;
+  }
+  .popularcrystals__ul li::before {
+    display: none;
+  }
+  .popularcrystals-h2 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .popularcrystals__button {
+    padding: 0 16px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .popularcrystals .crystal {
+    padding-top: 40px;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 7px;
+  }
+  .popularcrystals .crystal-img {
+    height: 130px;
+    padding: 40px 30px 40px;
+  }
+  .popularcrystals .crystal__div {
+    -webkit-box-shadow: 0 0 40px #f0d5d4;
+            box-shadow: 0 0 40px #f0d5d4;
+    border: #EAC1BF;
+    padding: 18px 0;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .popularcrystals .crystal__div:first-child {
+    margin-right: 0;
+  }
+  .popularcrystals .crystal__div:first-child :nth-of-type(2) {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .crystalvideo-button {
+    display: none;
+  }
+  .crystalvideo-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 12fr;
+    grid-template-rows: repeat(1, 12fr);
+    padding: 40px 10px 20px;
+    gap: 0px;
+  }
+  .crystalvideo-wrap > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .crystalvideo-wrap__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .crystalvideo-wrap__video {
+    display: none;
+  }
+  .crystalvideo-wrap__comment {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 20px;
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(2) {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div:nth-of-type(3) {
+    gap: 3px;
+  }
+  .crystalvideo-wrap__comment__div p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .crystalvideo-wrap__comment__div h2 {
+    font-size: 12px;
+  }
+  .crystalvideo-wrap__comment__div img {
+    height: 12px;
+    max-width: 12px;
+  }
+}
