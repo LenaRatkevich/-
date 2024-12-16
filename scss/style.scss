@@ -2085,6 +2085,8 @@ a{
             }
             }
             #scroll{
+                bottom: 15px; 
+                right: 15px;
                 img{
                     width: 30px;
                 }
@@ -2098,9 +2100,10 @@ a{
         &__nav{
             margin: 0 30px;
             p{
-                text-align: center;
-                font-size: 10px;
+                font-size: 12px;
                 padding: 0;
+                width: max-content;
+
             }
         }
         .nav{
@@ -2249,7 +2252,7 @@ a{
                 &__div{
                     padding-bottom: 80px;
                     p{
-                        font-size: 12px;
+                        font-size: 14px;
 
                     }
                 }
@@ -2479,11 +2482,25 @@ a{
                 }
             }
             #scroll{
+                bottom: 15px; 
+                right: 15px;
                 img{
                     width: 25px;
                 }
             }
     @media screen and (min-width:481px) and (max-width:635px){
+        .container{
+            max-width: 635px;
+            }
+        .crystalscom{
+            &__content{
+                font-size: 14px;
+                padding: 13px 0 8px;
+                &-img{
+                    height: 10px;
+                }
+            }
+            }
         .popularcrystals{
             &__wrap{
                 display: flex;
@@ -2588,7 +2605,7 @@ a{
                 &__div{
                     padding-bottom: 10px;
                     p{
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -2753,9 +2770,10 @@ a{
         &__nav{
             margin: 0 20px;
             p{
-                text-align: center;
-                font-size: 8px;
+                font-size: 10px;
                 padding: 0;
+                width: max-content;
+
             }
         }
         .nav{
@@ -2836,7 +2854,7 @@ a{
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(2, 2fr);
                 padding:30px 10px 20px;
-               gap: 10px;
+               gap: 15px;
                 &__info{
                     
                     justify-content: center;
@@ -2858,7 +2876,7 @@ a{
                                 gap:3px;
                         }
                         p{
-                            font-size: 10px;
+                            font-size: 12px;
                             line-height: 12px;
                         }
                         h2{
@@ -2923,7 +2941,7 @@ a{
             &-h2{
                 text-align: center;
                 padding-left: 0;
-                font-size: 12px;
+                font-size: 14px;
             }
             &__button{
                 padding: 0 16px;
@@ -2938,7 +2956,7 @@ a{
                     padding-top: 40px;
                     background-image: none;
                     display: flex;
-                    font-size: 10px;
+                    font-size: 12px;
                     justify-content: space-around;
                     gap: 7px;
                     &-img{
@@ -2956,7 +2974,7 @@ a{
                             & :nth-of-type(2){
                                 text-transform: capitalize;
                                 letter-spacing: 1px;
-                                font-size: 10px;
+                                font-size: 12px;
                         }
                     }
                     &:nth-child(1){
@@ -2971,7 +2989,7 @@ a{
         padding-bottom: 15px;
     }
     h3{
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 0px;
     margin-top: 30px;
 }
@@ -2985,7 +3003,7 @@ a{
     &__div{
         padding-bottom: 10px;
         p{
-            font-size: 10px;
+            font-size: 14px;
         }
     }
 }
@@ -2998,7 +3016,7 @@ a{
 &__wrap{
     flex-direction: column;
     align-items: center;
-    margin: 0px 15px 45px;
+    margin: 0px 15px 55px;
     gap: 30px;
     }
     &__div{
@@ -3013,7 +3031,7 @@ a{
             font-size: 32px;
         }
         .price{
-            font-size: 10px;
+            font-size: 14px;
             padding-top: 4px;
         }
         &:nth-child(2){
@@ -3058,7 +3076,7 @@ a{
         &-p{
             line-height: 18px;
             padding: 0 80px;
-            font-size: 12px;
+            font-size: 14px;
             text-align: center;
         }
     }
@@ -3132,20 +3150,35 @@ a{
         &-footer{
             row-gap: 5px;
             padding-left: 15px;
-            grid-template-columns: repeat(5, 60px);
+            grid-template-columns: repeat(3, 95px);
+            grid-template-rows: repeat(4, 1fr);
             a{ 
-                font-size: 8px;
+                font-size: 10px;
                 line-height: 10px;
-                width: 60px;
+                width: 95px;
+                &:nth-child(4){
+                    padding-left: 0px;
+                }
+                &:nth-child(5){
+                    padding-left: 0px;
+                }
+                &:nth-child(9){
+                    padding-left: 0px;
+                }
+                &:nth-child(10){
+                    padding-left: 0px;
+                }
         }
     }
     &-p{
-        font-size: 8px; 
+        font-size: 10px; 
         padding: 15px 0 30px 15px;
     }
 }
 }
 #scroll{
+    bottom: 10px; 
+    right: 10px;
     img{
         width: 20px;
     }
@@ -3156,8 +3189,9 @@ a{
             margin: 0 16px;
             p{
                 text-align: center;
-                font-size: 6px;
+                font-size: 10px;
                 padding: 0;
+                width: max-content;
             }
         }
         .nav{
@@ -3198,9 +3232,10 @@ a{
             font-size: 10px;
             padding: 8px 0 4px;
             &-img{
-                height: 6px;
+                height: 8px;
             }
         }
+        
         }
         .popularcrystals{
             &__wrap{
@@ -3253,7 +3288,7 @@ a{
             &-h2{
                 text-align: center;
                 padding-left: 0;
-                font-size: 12px;
+                font-size: 14px;
             }
             &__button{
                 padding: 0 16px;
@@ -3268,7 +3303,7 @@ a{
                     padding-top: 40px;
                     background-image: none;
                     display: flex;
-                    font-size: 10px;
+                    font-size: 12px;
                     justify-content: space-around;
                     gap: 7px;
                     &-img{
@@ -3286,7 +3321,7 @@ a{
                             & :nth-of-type(2){
                                 text-transform: capitalize;
                                 letter-spacing: 1px;
-                                font-size: 10px;
+                                font-size: 12px;
                         }
                     }
                 }
@@ -3299,7 +3334,7 @@ a{
     &-wrap{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1,12fr);
-        padding:30px 10px 20px;
+        padding:40px 10px 20px;
        gap: 0px;
         &__info{
             
@@ -3321,11 +3356,11 @@ a{
                         gap:3px;
                 }
                 p{
-                    font-size: 10px;
+                    font-size: 12px;
                     line-height: 12px;
                 }
                 h2{
-                    font-size: 10px;
+                    font-size: 12px;
                 }
                 img{
                     height: 12px;
