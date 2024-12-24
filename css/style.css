@@ -462,7 +462,7 @@
           flex-direction: row;
   background-image: url(../img/Shadow.png);
   background-repeat: no-repeat;
-  padding-top: 270px;
+  padding-top: 268px;
 }
 .popularcrystals .crystal-img {
   height: 256px;
@@ -503,7 +503,7 @@
   border-bottom: 1px solid #EAC1BF;
 }
 .shopbyintention-img {
-  padding-bottom: 25px;
+  padding-bottom: 23px;
 }
 .shopbyintention h3 {
   font-family: "Cormorant-Regular", sans-serif;
@@ -622,7 +622,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 .giftsofgratitude__div-img {
   position: relative;
@@ -647,7 +647,7 @@
   font-family: "RethinkSans-Regular", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 
 .joinourcrystalclub {
@@ -692,7 +692,7 @@
   font-family: "RethinkSans-Regular", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 11px 32px;
+  padding: 9px 32px;
   margin-right: auto;
 }
 .joinourcrystalclub__button:hover {
@@ -708,8 +708,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 9px;
-  gap: 24px;
+  padding-top: 8px;
+  gap: 23px;
 }
 .joinourcrystalclub__info h5 {
   font-family: "Cormorant-Regular", sans-serif;
