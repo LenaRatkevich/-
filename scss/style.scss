@@ -345,7 +345,7 @@ padding-bottom: 3px;
             flex-direction: row;
             background-image: url(../img/Shadow.png);
             background-repeat: no-repeat;
-            padding-top: 268px;
+            padding-top: 270px;
             &-img{
                 height: 256px;
                 padding: 83px 43px 80px;
@@ -377,7 +377,7 @@ padding-bottom: 3px;
 .shopbyintention{
     border-bottom: 1px solid #EAC1BF;
     &-img{
-        padding-bottom: 23px;
+        padding-bottom: 25px;
     }
     h3{
     font-family: $fontCormorantR;
@@ -469,7 +469,7 @@ padding-bottom: 3px;
     &__div{
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 4px;
         &-img{
             position: relative;
             .add{
@@ -492,7 +492,7 @@ padding-bottom: 3px;
             font-family: $fontRethinkR; 
             font-weight: $font-Regular;
             font-size: 15px;
-            padding-top: 9px;
+            padding-top: 7px;
         }
         
     }
@@ -521,7 +521,7 @@ padding-bottom: 3px;
         font-family: $fontRethinkR;
         font-weight: $font-Medium;
         text-transform: uppercase;
-        padding: 9px 32px;
+        padding: 11px 32px;
         margin-right: auto;
         &:hover{
             cursor: pointer;
@@ -532,8 +532,8 @@ padding-bottom: 3px;
     &__info{
         display: flex;
         flex-direction: column;
-        padding-top: 8px;
-        gap: 23px;
+        padding-top: 9px;
+        gap: 24px;
         h5{
             font-family: $fontCormorantR;
             font-weight: $font-Regular;
