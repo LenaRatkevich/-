@@ -1,1 +1,3374 @@
+@import 'peremen.scss';
+@font-face{
+    font-family:"RethinkSans-Medium";
+    src:url('../fonts/Rethink_Sans/RethinkSans-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family:"RethinkSans-Regular";
+    src:url('../fonts/Rethink_Sans/RethinkSans-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family:"Cormorant-Regular";
+    src:url('../fonts/Cormorant-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family:"Roboto-Regular";
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
 
+@mixin mark{
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 40px; 
+    height: 40px;
+    border-radius: 1px; 
+    padding: 3px;
+}
+*{
+    margin: 0;//
+}
+.container{
+    max-width: 1440px;
+    margin:0 auto;
+}
+.header{
+    border-bottom: 1px solid #EAC1BF;
+&__nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    align-items: center;
+    margin: 0px 56px 0 52px;
+    p{
+        display: flex;
+        padding-left: 70px;        
+        padding-top: 4px;
+        font-family: $fontRethinkM;
+        font-weight: $font-Medium;
+        font-style: normal;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+.nav{
+&__logo-img{
+    max-width: 36px;
+    margin: 23px 0;
+    &:hover{
+        cursor: pointer;
+    }
+}
+&__icon{
+display: flex;
+justify-content: end;
+padding-bottom: 3px;
+
+&-img{
+    &:hover{
+        cursor: pointer;
+    }    max-width: 30px;
+    &:first-of-type{
+        margin-right: 42px;
+    }
+}
+}
+}}
+.main{
+    border-bottom: 1px solid #EAC1BF;
+    background-color: #fbf5f9;
+    transition: transform 0.3s ease;
+    &__wrap{
+        background-image: url(../img/main.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    &-circle{
+        display: flex;
+        padding: 53px 46px;
+        background-color:black;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-bottom: 50px;
+        margin-right: 52px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        font-family: $fontRethinkR;
+        font-weight: $font-Regular;
+        white-space: pre-line;
+        line-height: 20px;
+        text-decoration: none;
+    text-align: center;  
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+  }
+    &-h1{
+        padding-top: 169px;
+        padding-bottom: 22px;
+        line-height: 120px;
+            font-family:$fontCormorantR;
+            text-align: center;
+            justify-content: center;
+            font-size: 118px;
+            font-weight: $font-Regular;
+            font-style: normal;
+            color: #000;
+            white-space: pre-line;
+    }
+}
+.crystalscom{
+    background-color: white;
+    border-bottom: 1px solid #EAC1BF;
+&__content{
+    color: #000;
+    text-transform: uppercase;
+    font-family: $fontRobotoR;
+    font-weight: $font-Regular;
+    font-size: 24px;
+    padding: 28px 0 24px;
+    letter-spacing: 1px;
+}
+}
+.malachite{
+    background-image: url(../img/Rectangle33.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #EAC1BF;
+    &__wrap{
+    display: flex;
+    justify-content: center;
+    &-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 131px;
+        padding-bottom: 186px;
+        padding-top: 106px;
+    }
+    h2{
+        display: flex;
+        font-family: $fontCormorantR;
+        font-weight: $font-Regular;
+        font-size: 48px;
+        padding-bottom: 83px;
+        padding-right: 92px;
+        line-height: 68px;
+    }
+    &-img{
+        position: relative; 
+        padding: 0 235px;
+        margin-right: 296px;
+        img{
+            top: 0; 
+            left: 0; 
+            height: 88%;
+            position: absolute; 
+
+        &:nth-child(2){
+            height: 676px;
+            padding-left: 172px;
+            margin-top: 76px;
+        }
+    }
+}
+    }
+&-button{
+    display: flex;
+    background-color: #000;
+    border-radius: 32px;
+    color: white;
+    font-size: 20px;
+    font-family: $fontRethinkR;
+    font-weight: $font-Medium;
+    text-transform: uppercase;
+    padding: 10px 46px;
+    margin-right: auto;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
+
+    }
+}
+}
+.crystalvideo {
+    &-button{
+        position: absolute;
+        border-radius: 32px;
+        border: 0;
+        text-transform: uppercase;
+        font-family: $fontRethinkM;
+        font-weight: $font-Medium;
+        font-size: 20px;
+        padding: 12px 25px;
+        margin-top: 536px;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 0 2px #EAC1BF;
+    
+        }
+    }
+    &-wrap{
+        padding:188px 127px 62px;
+        justify-content: space-between;
+        display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 2fr);
+        &__info{
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        &__video{
+            object-fit: cover;
+            grid-column: span 2;
+            grid-row: span 2;
+            height: 102%;
+            width: 99%;
+        }
+        &__comment{
+            display: flex;
+            flex-direction: column;
+            margin: 63px 120px 15px 255px;
+            gap: 37px;
+            &__div{
+                display: flex;
+                flex-direction: column;
+                font-family: $fontRethinkR;
+                font-weight: $font-Regular;
+                align-items: center;
+                text-align: center;
+                gap: 17px;
+                line-height: 24px;
+                &:nth-of-type(2){
+                    gap:16px;}
+                    &:nth-of-type(3){
+                        gap:20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                h2{
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: $font-Regular;
+                }
+                img{
+                    height: 27px;
+                    max-width: 27px; 
+                }
+            }
+        }
+    }
+}
+.popularcrystals{
+    border-bottom: 1px solid #EAC1BF;
+    &__wrap{
+        margin-top: auto;
+        padding-bottom: 19px;
+    }
+    &__div{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 75px 162px;
+        margin: 0 auto;
+        gap: 55px;
+    }
+    &__ul{
+        font-family: $fontCormorantR;
+        font-weight: $font-Medium;
+        font-size: 48px;
+        padding-left: 0;
+        padding-top: 22px;
+        margin-right: 58px;
+        list-style: none;
+        li {
+            position: relative; 
+            padding-left: 68px; 
+            margin-bottom: 31px;
+            line-height: 48px;
+        }
+        li:nth-child(1)::before {
+            background: radial-gradient(circle, rgba(#FACCBF, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+            @include mark;
+        }
+        li:nth-child(2)::before {
+            background: radial-gradient(circle, rgba(#E3D8C1, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+            @include mark;
+        }
+        li:nth-child(3)::before {
+            background: radial-gradient(circle, rgba(#878C8F, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+            @include mark;
+        }
+        li:nth-child(4)::before {
+            background: radial-gradient(circle, rgba(#C09DBD, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+            @include mark;
+        }
+        li:nth-child(5)::before {
+            background: radial-gradient(circle, rgba(#FAEDA3, 0.7) 10%, rgba(255, 255, 255, 0) 80%);
+            @include mark;
+        }
+    }
+    &-h2{
+        font-family: $fontRethinkR;
+        font-weight: $font-Medium;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-left: 75px;
+        letter-spacing: 1px;
+    }
+    &__button{
+        background-image: url(../img/button.png);
+        padding: 11px 39px;
+        font-size: 20px;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: $fontRethinkR;
+        font-weight: 600;
+        border-radius: 32px;
+        border:none;
+        margin-top: 23px;
+        margin-left:75px;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #ffd968;
+    
+        }
+    }
+        .crystal{
+            display: flex;
+            flex-direction: row;
+            background-image: url(../img/Shadow.png);
+            background-repeat: no-repeat;
+            padding-top: 270px;
+            &-img{
+                height: 256px;
+                padding: 83px 43px 80px;
+            }
+            &__div {
+                padding: 38px 0 40px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 16px;
+                background-color: white;
+                border: 1.5px solid #EAC1BF;
+                align-items: center;
+                &:first-child {
+                    margin-right: 24px;
+                    & :nth-of-type(2){
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                        font-size: 16px;
+                }
+                }
+                p{
+                font-family: $fontRethinkR;
+                font-weight: $font-Medium;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }}
+        }
+    }
+.shopbyintention{
+    border-bottom: 1px solid #EAC1BF;
+    &-img{
+        padding-bottom: 25px;
+    }
+    h3{
+    font-family: $fontCormorantR;
+    font-weight: $font-Regular;
+    font-size: 47px;
+    text-align: center;
+    padding-bottom: 92px;
+    margin-top: 101px;
+}
+&__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 86px;
+    }
+    &__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 123px;
+        text-decoration: none;
+        &:nth-child(1)p:hover{
+            text-shadow: 0px 0px 20px#f72b6c;
+            color: #f72b6c;
+        }
+        &:nth-child(2)p:hover{
+            text-shadow: 0px 0px 20px#37bb0b;
+            color: #37bb0b;
+        }
+        &:nth-child(3)p:hover{
+            text-shadow: 0px 0px 20px#ffb005;
+            color: #ffb005;
+        }
+        &:nth-child(4)p:hover{
+            text-shadow: 0px 0px 20px#340bbb;
+            color: #340bbb;
+        }
+        &:nth-child(5)p:hover{
+            text-shadow: 0px 0px 20px#279df7;
+            color: #279df7;
+        }
+        &:nth-child(6)p:hover{
+            text-shadow: 0px 0px 20px#d3cc03;
+            color: #d3cc03;
+        }
+        &:nth-child(7)p:hover{
+            text-shadow: 0px 0px 20px#920bbb;
+            color: #920bbb;
+        }
+        p{
+            font-family: $fontRethinkR;
+            font-weight: $font-Regular;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            list-style: none;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    a{
+        list-style: none;
+        color: #000;
+        text-decoration: none;
+        &:hover{
+            text-shadow: 0px 0px 30px#f241c6;
+            color: #f241c6;
+        }
+    }
+}
+.giftsofgratitude{
+    border-bottom: 1px solid #EAC1BF;
+    h4{
+    font-family: $fontCormorantR;
+    font-weight: $font-Medium;
+    font-size: 116px;
+    text-align: center;
+    padding-bottom: 90px;
+    margin-top: 120px;
+}
+&__wrap{
+    display: flex;
+    flex-direction: row;
+    margin-left: 58px;
+    gap: 16px;
+    margin-bottom: 167px;
+    }
+    &__div{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &-img{
+            position: relative;
+            .add{
+                position: absolute;
+                top:0;
+                left: 0;
+                opacity: 0;
+                transition: 0.6s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &-name{
+            font-family: $fontCormorantR;
+            font-weight: $font-Regular;
+            font-size: 47px;
+        }
+        .price{
+            font-family: $fontRethinkR; 
+            font-weight: $font-Regular;
+            font-size: 15px;
+            padding-top: 7px;
+        }
+        
+    }
+}
+.joinourcrystalclub{
+    border-bottom: 1px solid #EAC1BF;
+    background: linear-gradient(to right, rgba(234, 193, 191, 0.5), rgba(255, 255, 255));
+    &__pictures{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 64px 57px 63px 63px;
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-start;
+        background-color: #000;
+        border-radius: 32px;
+        color: white;
+        font-size: 20px;
+        font-family: $fontRethinkR;
+        font-weight: $font-Medium;
+        text-transform: uppercase;
+        padding: 11px 32px;
+        margin-right: auto;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 0 2px rgb(242, 209, 207), 0 0 0 3px #000000;
+    
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        padding-top: 9px;
+        gap: 24px;
+        h5{
+            font-family: $fontCormorantR;
+            font-weight: $font-Regular;
+            font-size: 47px;
+            line-height: 56px;
+            padding-right: 40px;
+        }
+        &-p{
+            font-family: $fontRethinkR;
+            font-weight: $font-Regular;
+            line-height: 24px;
+            padding-right: 80px;
+            font-size: 16px;
+        }
+    }
+}
+.comment{
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 44px 55px 44px 59px;
+    }
+    &__comment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 128px;
+        &-p{
+            font-family: $fontCormorantR;
+            font-weight: $font-Regular;
+            font-size: 47px;
+            line-height: 72px;
+            text-align: center;
+            padding: 2px 20px 11px;
+        }
+        h5{
+            font-family: $fontRethinkR;
+            font-weight: $font-Regular;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 35px;
+        }
+    }
+    &__face{
+        height: 95px;
+        width: 95px;
+    }
+}
+.crystalsdotcom{
+    &__title{
+        margin: 30px 58px 97px;
+     }
+    &__wrap{
+        margin: 60px 57px;
+        h6{
+            font-family: $fontRethinkR;
+            font-weight: $font-Regular;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 27px;
+        }
+    }
+    &__pictures{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 16px;
+        &-img{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    &__back{
+        background-image: url(../img/footer.png);
+        &-footer{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 27px;
+            padding-left: 79px;
+            max-width: 800px;
+            a{
+                grid-column: span 1;
+                grid-row: span 1;   
+                font-family: $fontRethinkR;
+                font-weight: $font-Regular;
+                font-size: 16px;
+                line-height: 16px;
+                text-transform: uppercase;
+                width: 130px;
+                &:nth-child(4){
+                    padding-left: 8px;
+                }
+                &:nth-child(5){
+                    padding-left: 2px;
+                }
+                &:nth-child(9){
+                    padding-left: 9px;
+                }
+                &:nth-child(10){
+                    padding-left: 3px;
+                }
+        }
+    }
+    &-p{
+        text-transform:none;
+        font-size: 12px; 
+        padding: 51px 0 73px 75px;
+        font-family: $fontRethinkR;
+        font-weight: $font-Regular;
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
+a{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    &:hover{
+        text-shadow: 0px 0px 30px#f241c6;
+        color: #f241c6;
+    }
+}
+}
+#scroll{
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #f9eeee 0%,  #ffd3d3 51%, #f9eeee 100%);
+    &:hover {
+         background-position: right center;
+    }
+    img{
+        width: 45px;
+    }
+    
+}
+@media screen and (min-width:1441px) and (max-width:1920px){
+    .container{
+    max-width: 1920px;
+    }
+    .header{
+    &__nav{
+        margin: 0px 56px 0px 52px;
+        p{
+            justify-content: center;
+            font-size: 18px;
+            padding-left: 0;
+        }
+    }
+    .nav{
+        &__logo{
+            &-img{
+                margin: 26px 0;
+                max-width: 32px;
+        }}
+    &__icon{
+        &-img{
+        &:first-of-type{
+            margin-right: 40px;
+        }
+    }
+    }
+    }}
+    .main{
+        &__wrap{
+            background-size: cover;
+        }
+        &-circle{
+            padding: 64px 53px;
+            margin-bottom: 55px;
+            margin-right: 68px;
+            font-size: 24px;
+      }
+        &-h1{
+            padding-top: 195px;
+            padding-bottom: 0;
+            line-height: 120px;
+            font-size: 124px;
+        }
+    }
+    .crystalscom{
+    &__content{
+        font-size: 26px;
+        padding: 30px 0 28px;
+        &-img{
+            height: 20px;
+        }
+    }
+    }
+    .malachite{
+        &__wrap{
+            padding: 70px;
+            justify-content: space-between;
+        &-info{
+            padding-left: 50px;
+            padding-bottom: 156px;
+            padding-top: 116px;
+        }
+        h2{
+            font-size: 52px;
+            padding-bottom: 83px;
+            padding-right: 0px;
+        }
+        &-img{
+            padding: 0 235px;
+            margin-right: 284px;
+            img{
+            height: 90%;
+            padding-left: 50px;
+            &:nth-child(2){
+                height: 640px;
+                padding-left: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+        }
+    &-button{
+        border-radius: 32px;
+        font-size: 22px;
+        padding: 13px 46px;
+        margin-right: auto;
+    }
+    }
+    .crystalvideo {
+        &-button{
+            font-size: 20px;
+            padding: 12px 26px;
+            margin-top: 92%;
+        }
+        &-wrap{
+            padding:170px 85px 62px;
+            &__info{
+                justify-content: center;
+            }
+            &__video{
+                height: 102%;
+                width: 99%;
+            }
+            &__comment{
+                justify-content: center;
+                margin: 100px 70px 100px 110px;
+                gap: 37px;
+                &__div{
+                    gap: 17px;
+                    &:nth-of-type(2){
+                        gap:16px;}
+                        &:nth-of-type(3){
+                            gap:20px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    h2{
+                        font-size: 18px;
+                    }
+                    img{
+                        height: 27px;
+                        max-width: 27px; 
+                    }
+                }
+            }
+        }
+    }
+    .popularcrystals{
+        &__ul{
+            font-size: 52px;
+            padding-left: 0px;
+            margin-right: 60px;
+        }
+        &-h2{
+            padding-left: 73px;
+        }
+        &__button{
+            margin-left: 70px;
+        }
+        .crystal{
+            &__div {
+                p{font-size: 18px;}
+                padding: 35px 0 38px;
+                &:first-child {
+                    margin-right: 20px;
+                }
+}
+        }
+    }
+        .shopbyintention{
+            h3{
+            font-size: 50px;
+        }
+        &__wrap{
+            gap: 100px;
+            }
+            &__div{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .giftsofgratitude{
+            h4{
+            font-size: 116px;
+        }
+        &__wrap{
+            justify-content: space-evenly;
+            margin:0 20px 150px;
+            }
+            &__div{
+                &-name{
+                    font-size: 50px;
+                }
+                .price{
+                    font-size: 15px;
+                    padding-top: 7px;
+                }
+            }
+        }
+        .joinourcrystalclub{
+            &__wrap{
+                justify-content: space-between;
+            }
+            &__pictures{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                &-img{
+                    height: 298px;
+                }
+            }
+            &__button{
+                font-size: 22px;
+                padding: 11px 36px;
+            }
+            &__info{
+                padding-top: 0px;
+                gap: 20px;
+                h5{
+                    font-size: 50px;
+                    line-height: 56px;
+                    padding-right: 40px;
+                }
+                &-p{
+                    line-height: 28px;
+                    padding-right: 60px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .comment{
+            &__comment{
+                gap: 45px;
+                padding-top: 128px;
+                &-p{
+                    font-size: 50px;
+                    line-height: 72px;
+                    padding: 0;
+                }
+                h5{
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    padding-bottom: 0px;
+                }
+            }
+            &__face{
+                height: 105px;
+                width: 105px;
+            }
+        }
+        .crystalsdotcom{
+            &__title{
+                display: flex;
+                margin: 80px auto;
+                height: 140px;
+                align-items: center;
+             }
+            &__wrap{
+                margin: 60px 40px;
+                h6{
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    padding-bottom: 27px;
+                }
+            }
+            &__pictures{
+                gap: 5px;
+                grid-template-columns: repeat(6, 220px);
+                justify-content: space-between;
+                &-img{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                    height: 220px;
+                }
+            }
+            &__back{
+                background-image: url(../img/footer.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                &-footer{
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    row-gap: 27px;
+                    padding-left: 79px;
+                    a{ 
+                        font-size: 18px;
+                        line-height: 18px;
+                        width: 140px;
+                }
+            }
+            &-p{
+                font-size: 14px; 
+                padding: 51px 0 73px 75px;
+            }
+        }
+        }
+}
+@media screen and (min-width:1281px) and (max-width:1439px){
+    .container{
+        max-width: 1439px;
+        }
+        .header{
+        &__nav{
+            margin: 0px 46px 0px 42px;
+            p{
+                justify-content: center;
+                font-size: 16px;
+                padding: 0;
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 22px 0;
+                    max-width: 32px;
+            }}
+        &__icon{
+            &-img{
+                max-width: 26px;
+            &:first-of-type{
+                margin-right: 30px;
+            }
+        }
+        }
+        }}
+        .main{
+            &__wrap{
+                background-size: cover;
+            }
+            &-circle{
+                padding: 45px 42px;
+                margin-bottom: 35px;
+                margin-right: 48px;
+                font-size: 18px;
+          }
+            &-h1{
+                padding-top: 170px;
+                padding-bottom: 30px;
+                font-size: 110px;
+                line-height: 118px;
+            }
+        }
+        .crystalscom{
+        &__content{
+            font-size: 20px;
+            padding: 26px 0 22px;
+            &-img{
+                height: 16px;
+            }
+        }
+        }
+        .malachite{
+            &__wrap{
+                padding: 50px;
+                justify-content: space-between;
+            &-info{
+                padding-left: 50px;
+                padding-bottom: 100px;
+                padding-top: 116px;
+            }
+            h2{
+                font-size: 48px;
+                padding-bottom: 63px;
+                padding-right: 0px;
+            }
+            &-img{
+                padding: 0 235px;
+                margin-right: 234px;
+                img{
+                height: 85%;
+                padding-left: 50px;
+                &:nth-child(2){
+                    height: 610px;
+                    padding-left: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+            }
+        &-button{
+            border-radius: 32px;
+            font-size: 22px;
+            padding: 13px 46px;
+            margin-right: auto;
+        }
+        }
+        .crystalvideo {
+            &-button{
+                font-size: 20px;
+                padding: 12px 26px;
+                margin-top: 84%;
+            }
+            &-wrap{
+                padding:150px 75px 62px;
+                &__info{
+                    justify-content: center;
+                }
+                &__video{
+                    height: 98%;
+                    width: 96%;
+                }
+                &__comment{
+                    justify-content: center;
+                    margin: 70px 70px 70px 150px;
+                    gap: 37px;
+                    &__div{
+                        gap: 17px;
+                        &:nth-of-type(2){
+                            gap:16px;}
+                            &:nth-of-type(3){
+                                gap:20px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        h2{
+                            font-size: 18px;
+                        }
+                        img{
+                            height: 27px;
+                            max-width: 27px; 
+                        }
+                    }
+                }
+            }
+        }
+        .popularcrystals{
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                gap: 55px;
+            }
+            &__ul{
+                padding-top: 22px;
+                margin-right: 58px;
+            }
+            &-h2{
+                padding-left: 75px;
+            }
+            &__button{
+                margin-top: 20px;
+                margin-left:75px;
+            }
+                .crystal{
+                    padding-top: 260px;
+                }
+            }
+            .shopbyintention{
+                h3{
+                font-size: 46px;
+                padding-bottom: 70px;
+                margin-top: 70px;
+            }
+            &__wrap{
+                gap: 10px;
+                justify-content: space-around;
+                margin: 0 40px;
+                }
+                &__div{
+                    padding-bottom: 100px;
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .giftsofgratitude{
+                h4{
+                margin-top: 90px;
+                padding-bottom: 60px;
+                font-size: 95px;
+            }
+            &__wrap{
+                justify-content: space-evenly;
+                margin:0 20px 80px;
+                }
+                &__div{
+                    .add{
+                        height: 280px;
+                    }
+                    .main{
+                        height: 280px;
+                    }
+                    &-name{
+                        font-size: 48px;
+                    }
+                    .price{
+                        font-size: 15px;
+                        padding-top: 7px;
+                    }
+                }
+            }
+            .joinourcrystalclub{
+                &__pictures{
+                    gap: 18px;
+                    &-img{
+                        height: 260px;
+                    }
+                }
+                &__wrap{
+                    padding: 50px 40px 53px 40px;
+                }
+                &__button{
+                    font-size: 20px;
+                    padding: 9px 32px;
+                }
+                &__info{
+                    padding-top: 0px;
+                    gap: 14px;
+                    h5{
+                        font-size: 44px;
+                        line-height: 52px;
+                        padding-right: 20px;
+                    }
+                    &-p{
+                        line-height: 24px;
+                        padding-right: 40px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .comment{
+                &__wrap{
+                    margin: 34px 40px;
+                }
+                &__comment{
+                    gap: 35px;
+                    padding-top: 110px;
+                    &-p{
+                        font-size: 42px;
+                        line-height: 65px;
+                        padding: 0;
+                    }
+                    h5{
+                        font-size: 18px;
+                        line-height: 18px;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                    }
+                }
+                &__face{
+                    height: 90px;
+                    width: 90px;
+                }
+            }
+            .crystalsdotcom{
+                &__title{
+                    display: flex;
+                    margin: 60px auto;
+                    height: 125px;
+                    align-items: center;
+                 }
+                &__wrap{
+                    margin: 60px 40px;
+                    h6{
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: 1px;
+                        padding-bottom: 27px;
+                    }
+                }
+                &__pictures{
+                    gap: 5px;
+                    grid-template-columns: repeat(6, 195px);
+                    justify-content: space-between;
+                    &-img{
+                        grid-column: span 1;
+                        grid-row: span 1;
+                        height: 195px;
+                    }
+                }
+                &__back{
+                    background-image: url(../img/footer.png);
+                    background-size: cover;
+                    &-footer{
+                        display: grid;
+                        row-gap: 25px;
+                        padding-left: 60px;
+                        a{ 
+                            font-size: 16px;
+                            line-height: 18px;
+                            width: 140px;
+                    }
+                }
+                &-p{
+                    font-size: 14px; 
+                    padding: 51px 0 73px 60px;
+                }
+            }
+            }
+}
+@media screen and (min-width:1025px) and (max-width:1280px){
+    .container{
+        max-width: 1280px;
+        }
+        .header{
+        &__nav{
+            margin: 0px 46px 0px 42px;
+            p{
+                justify-content: center;
+                font-size: 16px;
+                padding: 0;
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 22px 0;
+                    max-width: 32px;
+            }}
+        &__icon{
+            &-img{
+                max-width: 26px;
+            &:first-of-type{
+                margin-right: 30px;
+            }
+        }
+        }
+        }}
+        .main{
+            &__wrap{
+                background-size: cover;
+            }
+            &-circle{
+                padding: 40px 37px;
+                margin-bottom: 35px;
+                margin-right: 48px;
+                font-size: 18px;
+          }
+            &-h1{
+                padding-top: 140px;
+                padding-bottom: 0;
+                font-size: 104px;
+                line-height: 104px;
+            }
+        }
+        .crystalscom{
+        &__content{
+            font-size: 20px;
+            padding: 26px 0 22px;
+            &-img{
+                height: 16px;
+            }
+        }
+        }
+        .malachite{
+            &__wrap{
+                padding: 40px;
+                justify-content: space-between;
+            &-info{
+                padding-left: 50px;
+                padding-bottom: 100px;
+                padding-top: 116px;
+            }
+            h2{
+                font-size: 40px;
+                line-height: 60px;
+                padding-bottom: 50px;
+                padding-right: 0px;
+            }
+            &-img{
+                padding: 0 235px;
+                margin-right: 100px;
+                img{
+                height: 75%;
+                padding-left: 50px;
+                &:nth-child(2){
+                    height: 560px;
+                    padding-left: 100px;
+                    margin-top: 20px;
+                }
+            }
+        }
+            }
+        &-button{
+            border-radius: 32px;
+            font-size: 22px;
+            padding: 10px 42px;
+            margin-right: auto;
+        }
+        }
+        .crystalvideo {
+            &-button{
+                font-size: 14px;
+                padding: 9px 22px;
+                margin-top: 81%;
+            }
+            &-wrap{
+                padding:130px 60px 58px;
+                &__info{
+                    justify-content: center;
+                }
+                &__video{
+                    height: 98%;
+                    width: 92%;
+                }
+                &__comment{
+                    justify-content: center;
+                    margin: 40px 10px 40px 100px;
+                    gap: 25px;
+                    &__div{
+                        gap: 10px;
+                        &:nth-of-type(2){
+                            gap:16px;}
+                            &:nth-of-type(3){
+                                gap:20px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                        h2{
+                            font-size: 14px;
+                        }
+                        img{
+                            height: 20px;
+                            max-width: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+        .popularcrystals{
+            &__wrap{
+                margin-top: auto;
+                padding-bottom: 0px;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                gap: 0px;
+                padding: 0px 65px 152px;
+            }
+            &__ul{
+                padding-top: 22px;
+                margin-right: 35px;
+                font-size: 44px;
+            }
+            &-h2{
+                padding-left: 73px;
+            }
+            &__button{
+                padding: 10px 30px;
+                margin-top: 5px;
+                margin-left:70px;
+                font-size: 18px;
+            }
+                .crystal{
+                    padding-top: 240px;
+                    background-size: 600px;
+                    &-img{
+                        height: 230px;
+                        padding: 75px 33px 70px;
+                    }
+                    &__div {
+                        padding: 35px 0 38px;
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+}
+                }
+            }
+            .shopbyintention{
+                &-img{
+                    width: 90px;
+                }
+                h3{
+                font-size: 44px;
+                padding-bottom: 50px;
+                margin-top: 60px;
+            }
+            &__wrap{
+                gap: 10px;
+                justify-content: space-around;
+                margin: 0 30px;
+                }
+                &__div{
+                    padding-bottom: 90px;
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .giftsofgratitude{
+                h4{
+                margin-top: 80px;
+                padding-bottom: 50px;
+                font-size: 82px;
+            }
+            &__wrap{
+                justify-content: space-evenly;
+                margin: 0px 20px 70px;
+                gap: 14px;
+                }
+                &__div{
+                    gap: 0;
+                    .add{
+                        height: 235px;
+                    }
+                    .main{
+                        height: 235px;
+                    }
+                    &-name{
+                        font-size: 42px;
+                    }
+                    .price{
+                        font-size: 15px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+            .joinourcrystalclub{
+                &__pictures{
+                    gap: 10px;
+                    &-img{
+                        height: 220px;
+                    }
+                }
+                &__wrap{
+                    padding: 50px 50px 53px 50px;
+                }
+                &__button{
+                    font-size: 16px;
+                    padding: 7px 30px;
+                }
+                &__info{
+                    padding-top: 0px;
+                    gap: 8px;
+                    h5{
+                        font-size: 40px;
+                        line-height: 48px;
+                        padding-right: 15px;
+                    }
+                    &-p{
+                        line-height: 22px;
+                        padding-right: 30px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .comment{
+                &__img{
+                    height: 550px;
+                    &:nth-child(4){
+                        height: 25px;
+                    }
+                }
+                &__wrap{
+                    margin: 34px 40px;
+                }
+                &__comment{
+                    gap: 25px;
+                    padding-top: 90px;
+                    &-p{
+                        font-size: 38px;
+                        line-height: 55px;
+                        padding: 0;
+                    }
+                    h5{
+                        font-size: 16px;
+                        line-height: 18px;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                    }
+                }
+                &__face{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .crystalsdotcom{
+                &__title{
+                    display: flex;
+                    margin: 30px auto;
+                    height: 105px;
+                    align-items: center;
+                 }
+                &__wrap{
+                    margin: 60px 40px;
+                    h6{
+                        font-size: 12px;
+                        line-height: 12px;
+                        letter-spacing: 1px;
+                        padding-bottom: 20px;
+                    }
+                }
+                &__pictures{
+                    gap: 5px;
+                    grid-template-columns: repeat(6, 160px);
+                    justify-content: space-around;
+                    &-img{
+                        grid-column: span 1;
+                        grid-row: span 1;
+                        height: 160px;
+                    }
+                }
+                &__back{
+                    background-image: url(../img/footer.png);
+                    background-size: cover;
+                    &-footer{
+                        display: grid;
+                        row-gap: 18px;
+                        padding-left: 50px;
+                        grid-template-columns: repeat(5, 130px);
+                        a{ 
+                            font-size: 12px;
+                            line-height: 14px;
+                            width: 130px;
+                    }
+                }
+                &-p{
+                    font-size: 12px; 
+                    padding: 25px 0 40px 50px;
+                }
+            }
+            }
+            #scroll{
+                img{
+                    width: 35px;
+                }
+            }
+     @media screen and (min-width:1025px) and (max-width:1066px){
+    .container{
+        max-width: 1066px;
+        }
+    .popularcrystals{
+        &__wrap{
+            margin-top: auto;
+            padding-bottom: 0px;
+        }
+        &__div{
+            display: flex;
+            justify-content: space-around;
+            gap: 0px;
+            padding: 0px 63px 152px;
+        }
+        &__ul{
+            padding-top: 22px;
+            margin-right: 25px;
+            font-size: 42px;
+            li {
+                margin-bottom: 25px;
+            }
+        }
+        &-h2{
+            padding-left: 73px;
+        }
+        &__button{
+            padding: 10px 30px;
+            height: 45px;
+            margin-top: 5px;
+            margin-left:70px;
+            font-size: 17px;
+        }
+            .crystal{
+                padding-top: 240px;
+                &-img{
+                    height: 220px;
+                    padding: 63px 33px 58px;
+                }
+                &__div {
+                    padding: 35px 0 38px;
+                    &:first-child {
+                        margin-right: 17px;
+                    }
+}
+            }
+        }
+        .giftsofgratitude{
+            h4{
+            margin-top: 70px;
+            padding-bottom: 40px;
+            font-size: 80px;
+        }
+        &__wrap{
+            justify-content: space-evenly;
+            margin: 0px 15px 60px;
+            gap: 10px;
+            }
+            &__div{
+                gap: 0;
+                .add{
+                    height: 225px;
+                }
+                .main{
+                    height: 225px;
+                }
+                &-name{
+                    font-size: 42px;
+                }
+                .price{
+                    font-size: 15px;
+                    padding-top: 4px;
+                }
+            }
+        }
+        .joinourcrystalclub{
+            &__pictures{
+                gap: 10px;
+                &-img{
+                    height: 220px;
+                }
+            }
+            &__wrap{
+                padding: 45px 35px 45px 35px;
+            }
+            &__button{
+                font-size: 16px;
+                padding: 7px 30px;
+            }
+            &__info{
+                padding-top: 0px;
+                gap: 8px;
+                h5{
+                    font-size: 40px;
+                    line-height: 48px;
+                    padding-right: 15px;
+                }
+                &-p{
+                    line-height: 22px;
+                    padding-right: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .crystalsdotcom{
+            &__title{
+                display: flex;
+                margin: 30px auto;
+                height: 100px;
+                align-items: center;
+             }
+            &__wrap{
+                margin: 60px 40px;
+                h6{
+                    font-size: 12px;
+                    line-height: 12px;
+                    letter-spacing: 1px;
+                    padding-bottom: 20px;
+                }
+            }
+            &__pictures{
+                gap: 5px;
+                grid-template-columns: repeat(6, 150px);
+                justify-content: space-around;
+                &-img{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                    height: 150px;
+                }
+            }
+            &__back{
+                background-image: url(../img/footer.png);
+                background-size: cover;
+                &-footer{
+                    display: grid;
+                    row-gap: 18px;
+                    padding-left: 40px;
+                    grid-template-columns: repeat(5, 120px);
+                    a{ 
+                        font-size: 12px;
+                        line-height: 14px;
+                        width: 120px;
+                }
+            }
+            &-p{
+                font-size: 12px; 
+                padding: 25px 0 40px 40px;
+            }
+        }
+        }
+
+}}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .container{
+        max-width: 1024px;
+        }
+        .header{
+        &__nav{
+            margin: 0px 40px 0px 36px;
+            p{
+                justify-content: center;
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 20px 0;
+                    max-width: 26px;
+            }}
+        &__icon{
+            &-img{
+                max-width: 25px;
+            &:first-of-type{
+                margin-right: 28px;
+            }
+        }
+        }
+        }}
+        .main{
+            &__wrap{
+                background-size: cover;
+            }
+            &-circle{
+                padding: 38px 34px;
+                margin-bottom: 30px;
+                margin-right: 35px;
+                font-size: 16px;
+                line-height: 16px;
+          }
+            &-h1{
+                padding-top: 130px;
+                padding-bottom: 0;
+                font-size: 95px;
+                line-height: 95px;
+            }
+        }
+        .crystalscom{
+        &__content{
+            font-size: 16px;
+            padding: 20px 0 16px;
+            &-img{
+                height: 12px;
+            }
+        }
+        }
+        .malachite{
+            &__wrap{
+                padding: 30px;
+                justify-content: space-between;
+            &-info{
+                padding-left: 30px;
+                padding-bottom: 90px;
+                padding-top: 95px;
+            }
+            h2{
+                font-size: 36px;
+                line-height: 46px;
+                padding-bottom: 30px;
+                padding-right: 10px;
+            }
+            &-img{
+                padding: 0 155px;
+                margin-right: 0px;
+                img{
+                    &:nth-child(1){
+               display: none;}
+                &:nth-child(2){
+                    
+                    height: 400px;
+                    padding-left: 0px;
+                    margin-top: 30px;
+                }
+            }
+        }
+            }
+        &-button{
+            border-radius: 32px;
+            font-size: 18px;
+            padding: 7px 38px;
+            margin-right: auto;
+        }
+        }
+        .crystalvideo {
+            &-button{
+                font-size: 12px;
+                padding: 7px 22px;
+                margin-top: 78%;
+            }
+            &-wrap{
+                padding:100px 20px 40px;
+                &__info{
+                    justify-content: center;
+                }
+                &__video{
+                    height: 96%;
+                    width: 90%;
+                }
+                &__comment{
+                    justify-content: center;
+                    margin: 30px 10px 30px 20px;
+                    gap: 20px;
+                    &__div{
+                        gap: 10px;
+                        &:nth-of-type(2){
+                            gap:16px;}
+                            &:nth-of-type(3){
+                                gap:20px;
+                        }
+                        p{
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                        h2{
+                            font-size: 12px;
+                        }
+                        img{
+                            height: 18px;
+                            max-width: 18px; 
+                        }
+                    }
+                }
+            }
+        }
+        .popularcrystals{
+            &__wrap{
+                margin-top: auto;
+                padding-bottom: 0px;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                gap: 0px;
+                padding: 0px 20px 100px;
+            }
+            &__ul{
+                padding-top: 12px;
+                margin-right: 15px;
+                font-size: 32px;
+                li {
+                    margin-bottom: 12px;
+                    padding-left: 60px; 
+                }
+            }
+            &-h2{
+                padding-left: 63px;
+                font-size: 14px;
+            }
+            &__button{
+                padding: 9px 20px;
+                margin-top: 0px;
+                margin-left:62px;
+                font-size: 14px;
+            }
+                .crystal{
+                    padding-top: 180px;
+                    background-size: 500px;
+                    &-img{
+                        height: 180px;
+                        padding: 48px 20px 45px;
+                    }
+                    &__div {
+                        padding: 28px 0 30px;
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    p{
+                        font-size: 14px;
+                    }}
+                }
+            }
+            .shopbyintention{
+                &-img{
+                    width: 70px;
+                }
+                h3{
+                font-size: 38px;
+                padding-bottom: 40px;
+                margin-top: 50px;
+            }
+            &__wrap{
+                gap: 6px;
+                justify-content: space-around;
+                margin: 0 30px;
+                }
+                &__div{
+                    padding-bottom: 80px;
+                    p{
+
+                        font-size: 16px;
+
+                    }
+                }
+
+            }
+            .giftsofgratitude{
+                h4{
+                margin-top: 55px;
+                padding-bottom: 40px;
+                font-size: 72px;
+            }
+            &__wrap{
+                justify-content: space-evenly;
+                margin: 0px 15px 60px;
+                gap: 7px;
+                }
+                &__div{
+                    gap: 0;
+                    .add{
+                        height: 258px;
+                    }
+                    .main{
+                        height: 258px;
+                    }
+                    &-name{
+                        font-size: 46px;
+                    }
+                    .price{
+                        font-size: 15px;
+                        padding-top: 4px;
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+            .joinourcrystalclub{
+                &__pictures{
+                    gap: 10px;
+                    &-img{
+                        height: 195px;
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+                &__wrap{
+                    padding: 45px 50px 45px 50px;
+                }
+                &__button{
+                    font-size: 16px;
+                    padding: 8px 28px;
+                }
+                &__info{
+                    justify-content: center;
+                    padding-top: 0px;
+                    gap: 15px;
+                    h5{
+                        font-size: 40px;
+                        line-height: 44px;
+                        padding-right: 15px;
+                    }
+                    &-p{
+                        display: none;
+                    }
+                }
+            }
+            .comment{
+                &__img{
+                    height: 400px;
+                    width: 180px;
+                    &:nth-child(4){
+                        height: 18px;
+                        width: 19px;
+                    }
+                }
+                &__wrap{
+                    margin: 25px 30px;
+                }
+                &__comment{
+                    gap: 15px;
+                    padding-top: 95px;
+                    &-p{
+                        font-size: 28px;
+                        line-height: 36px;
+                        padding: 0;
+                    }
+                    h5{
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                    }
+                }
+                &__face{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .crystalsdotcom{
+                &__title{
+                    display: none;
+                 }
+                &__wrap{
+                    margin: 40px 20px 60px;
+                    h6{
+                        font-size: 12px;
+                        line-height: 12px;
+                        letter-spacing: 1px;
+                        padding-bottom: 15px;
+                        padding-left: 20px;
+                    }
+                }
+                &__pictures{
+                    gap: 3px;
+                    grid-template-columns: repeat(5, 140px);
+                    justify-content: space-around;
+                    &-img{
+                        grid-column: span 1;
+                        grid-row: span 1;
+                        height: 140px;
+                        &:nth-child(5){
+                            display: none;
+                        }
+                    }
+                }
+                &__back{
+                    background-image: url(../img/footer.png);
+                    background-size: cover;
+                    &-footer{
+                        display: grid;
+                        row-gap: 14px;
+                        padding-left: 40px;
+                        grid-template-columns: repeat(5, 120px);
+                        a{ 
+                            font-size: 12px;
+                            line-height: 14px;
+                            width: 120px;
+                    }
+                }
+                &-p{
+                    font-size: 12px; 
+                    padding: 35px 0 60px 40px;
+                }
+            }
+            }
+            #scroll{
+                bottom: 15px; 
+                right: 15px;
+                img{
+                    width: 30px;
+                }
+            }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .container{
+        max-width: 768px;
+        }
+        .header{
+        &__nav{
+            margin: 0 30px;
+            p{
+                font-size: 12px;
+                padding: 0;
+                width: max-content;
+
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 14px 0;
+                    max-width: 20px;
+            }}
+            &__icon{
+                &-img{
+                    max-width: 18px;
+                &:first-of-type{
+                    margin-right: 22px;
+                }
+            }
+            }
+        }}
+        .main{
+            &__wrap{
+                background-size: cover;
+            }
+            &-circle{
+                padding: 28px 26px;
+                margin-bottom: 20px;
+                margin-right: 30px;
+                font-size: 12px;
+                line-height: 12px;
+          }
+            &-h1{
+                padding-top: 90px;
+                padding-bottom: 0;
+                font-size: 68px;
+                line-height: 75px;
+            }
+        }
+        .crystalscom{
+        &__content{
+            font-size: 14px;
+            padding: 13px 0 8px;
+            &-img{
+                height: 12px;
+            }
+        }
+        }
+        .popularcrystals{
+            &__wrap{
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding-bottom: 0px;
+                gap: 10px;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                gap: 0px;
+                padding: 40px 25px;
+            }
+            &__ul{
+                display: grid;
+                grid-template-columns: 150px 80px 1fr 1fr 1fr;               
+                grid-template-rows: repeat(1, 1fr);
+                padding-top: 12px;
+                margin-right: 0;
+                justify-content: space-between;
+                font-size: 28px;
+                li {
+                    margin-bottom: 12px;
+                    padding-left: 0px; 
+                    text-align: center;
+                    &:nth-child(1){
+                        text-shadow: 0px 0px 20px#fd400c;
+                    }
+                    &:nth-child(2){
+                        text-shadow: 0px 0px 20px#ffae00;
+                    }
+                    &:nth-child(3){
+                        text-shadow: 0px 0px 20px#1979ac;
+                    }
+                    &:nth-child(4){
+                        text-shadow: 0px 0px 20px#c814b9;
+                    }
+                    &:nth-child(5){
+                        text-shadow: 0px 0px 20px#fdd703;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            &-h2{
+                text-align: center;
+                padding-left: 0;
+                font-size: 14px;
+            }
+            &__button{
+                padding: 8px 24px;
+                margin-top: 0px;
+                margin-right: auto;
+                margin-left: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+                .crystal{
+                    padding-top: 50px;
+                    background-image: none;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 10px;
+                    &-img{
+                        height: 170px;
+                        padding: 45px 45px 43px;
+                    }
+                    &__div {
+                        box-shadow: 0 0 40px#f0d5d4;
+                        border: #EAC1BF;
+                        padding: 28px 0;
+                        margin: 0 auto;
+                        &:first-child {
+                            margin-right: 0;
+                            & :nth-of-type(2){
+                                font-size: 12px;
+                        }
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                }
+                }
+            }
+            .shopbyintention{
+                &-img{
+                    width: 70px;
+                }
+                h3{
+                font-size: 34px;
+                padding-bottom: 30px;
+                margin-top: 50px;
+            }
+            &__wrap{
+                gap: 3px;
+                justify-content: space-around;
+                margin: 0 20px;
+                }
+                &__div{
+                    padding-bottom: 80px;
+                    p{
+                        font-size: 14px;
+
+                    }
+                }
+            }
+            .giftsofgratitude{
+                h4{
+                margin-top: 55px;
+                padding-bottom: 45px;
+                font-size: 64px;
+            }
+            &__wrap{
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 15px 60px;
+                gap: 45px;
+                }
+                &__div{
+                    gap: 0;
+                    .add{
+                        height: 280px;
+                    }
+                    .main{
+                        height: 280px;
+                    }
+                    &-name{
+                        font-size: 46px;
+                    }
+                    .price{
+                        font-size: 15px;
+                        padding-top: 4px;
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+            .joinourcrystalclub{
+                &__pictures{
+                    gap: 10px;
+                    &-img{
+                        height: 170px;
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+                &__wrap{
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 50px 0;
+                    gap: 20px;
+                }
+                &__button{
+                    justify-content: center;
+                    margin-left: auto;
+                    font-size: 14px;
+                    padding: 5px 24px;
+                }
+                &__info{
+                    align-items: center;
+                    padding-top: 0px;
+                    gap: 10px;
+                    h5{
+                        font-size: 40px;
+                        line-height: 42px;
+                        padding-right: 0px;
+                    }
+                    &-p{
+                        line-height: 20px;
+                        padding: 0 100px;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+            .comment{
+                &__img{
+                    height: 340px;
+                    width: 130px;
+                    &:nth-child(4){
+                        height: 15px;
+                        width: 16px;
+                    }
+                }
+                &__wrap{
+                    margin: 25px 30px;
+                }
+                &__comment{
+                    gap: 12px;
+                    padding-top: 90px;
+                    &-p{
+                        font-size: 24px;
+                        line-height: 28px;
+                        padding: 0;
+                    }
+                    h5{
+                        font-size: 12px;
+                        line-height: 12px;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                    }
+                }
+                &__face{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .crystalsdotcom{
+                &__title{
+                    display: none;
+                 }
+                &__wrap{
+                    margin: 40px 15px 40px;
+                    h6{
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-bottom: 15px;
+                        padding-left: 10px;
+                    }
+                }
+                &__pictures{
+                    gap: 1px;
+                    grid-template-columns: repeat(5, 120px);
+                    justify-content: space-around;
+                    &-img{
+                        height: 120px;
+                        &:nth-child(5){
+                            display: none;
+                        }
+                    }
+                }
+                &__back{
+                    background-image: url(../img/footer.png);
+                    background-size: cover;
+                    &-footer{
+                        row-gap: 14px;
+                        padding-left: 20px;
+                        grid-template-columns: repeat(5, 90px);
+                        a{ 
+                            font-size: 10px;
+                            line-height: 14px;
+                            width: 90px;
+                    }
+                }
+                &-p{
+                    font-size: 10px; 
+                    padding: 25px 0 40px 25px;
+                }
+            }
+            }
+            .malachite{
+                &__wrap{
+                    padding: 20px;
+                    justify-content: space-between;
+                &-info{
+                    padding-left: 30px;
+                    padding-bottom: 100px;
+                    padding-top: 55px;
+                }
+                h2{
+                    font-size: 26px;
+                    line-height: 30px;
+                    padding-bottom: 15px;
+                    padding-right: 10px;
+                }
+                &-img{
+                    padding: 0 110px;
+                    margin-right: 0px;
+                    img{
+                        &:nth-child(1){
+                   display: none;}
+                    &:nth-child(2){
+                        
+                        height: 300px;
+                        padding-left: 0px;
+                        margin-top: 0px;
+                    }
+                }
+            }
+                }
+            &-button{
+                border-radius: 32px;
+                font-size: 14px;
+                padding: 4px 28px;
+                margin-right: auto;
+            }
+            }
+            .crystalvideo {
+                &-button{
+                    font-size: 10px;
+                    padding: 4px 16px;
+                    margin-top: 75%;
+                }
+                &-wrap{
+                    padding:70px 10px 40px;
+                    &__info{
+                        justify-content: center;
+                    }
+                    &__video{
+                        height: 98%;
+                        width: 88%;
+                    }
+                    &__comment{
+                        justify-content: center;
+                        margin:0px;
+                        gap: 7px;
+                        &__div{
+                            gap: 8px;
+                            &:nth-of-type(2){
+                                gap:8px;}
+                                &:nth-of-type(3){
+                                    gap:8px;
+                            }
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                            h2{
+                                font-size: 10px;
+                            }
+                            img{
+                                height: 14px;
+                                max-width: 14px; 
+                            }
+                        }
+                    }
+                }
+            }
+            #scroll{
+                bottom: 15px; 
+                right: 15px;
+                img{
+                    width: 25px;
+                }
+            }
+    @media screen and (min-width:481px) and (max-width:635px){
+        .container{
+            max-width: 635px;
+            }
+        .crystalscom{
+            &__content{
+                font-size: 14px;
+                padding: 13px 0 8px;
+                &-img{
+                    height: 10px;
+                }
+            }
+            }
+        .popularcrystals{
+            &__wrap{
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding-bottom: 0px;
+                gap: 15px;
+                justify-content: center;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                gap: 0px;
+                padding: 40px 25px;
+            }
+            &__ul{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                padding-top: 0px;
+                margin-right: 0;
+                font-size: 28px;
+                li {
+                    margin-bottom: 0;
+                    padding-left: 0px; 
+                    text-align: center;
+                    line-height: 35px;
+                    &:nth-child(1){
+                        text-shadow: 0px 0px 20px#fd400c; 
+                    }
+                    &:nth-child(2){
+                        text-shadow: 0px 0px 20px#ffae00;
+                    }
+                    &:nth-child(3){
+                        text-shadow: 0px 0px 20px#1979ac;
+                    }
+                    &:nth-child(4){
+                        text-shadow: 0px 0px 20px#c814b9;
+                    }
+                    &:nth-child(5){
+                        text-shadow: 0px 0px 20px#fdd703;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            &-h2{
+                text-align: center;
+                padding-left: 0;
+                font-size: 14px;
+            }
+            &__button{
+                padding: 8px 24px;
+                margin-top: 0px;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 14px;
+                font-weight: 500;
+            }
+                .crystal{
+                    padding-top: 50px;
+                    background-image: none;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 10px;
+                    &-img{
+                        height: 150px;
+                        padding: 25px 30px 25px;
+                    }
+                    &__div {
+                        box-shadow: 0 0 40px#f0d5d4;
+                        border: #EAC1BF;
+                        padding: 20px 0;
+                        margin: 0 auto;
+                        &:first-child {
+                            margin-right: 0;
+                        }
+                    p{
+                        font-size: 12px;
+                    }}
+                }
+            }
+            .shopbyintention{
+                &-img{
+                    width: 55px;
+                    padding-bottom: 15px;
+                }
+                h3{
+                font-size: 32px;
+                padding-bottom: 0px;
+                margin-top: 50px;
+            }
+            &__wrap{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid:1.5;
+                gap: 5px;
+                margin: 30px 5px;
+                }
+                &__div{
+                    padding-bottom: 10px;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .comment{
+                &__img{
+                    height: 340px;
+                    width: 130px;
+                    &:nth-child(4){
+                        height: 12px;
+                        width: 13px;
+                    }
+                }
+                &__wrap{
+                    margin: 18px 20px;
+                }
+                &__comment{
+                    gap: 10px;
+                    padding-top: 70px;
+                    &-p{
+                        font-size: 22px;
+                        line-height: 26px;
+                        padding: 0;
+                    }
+                    h5{
+                        font-size: 10px;
+                        line-height: 12px;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                    }
+                }
+                &__face{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .crystalsdotcom{
+                &__title{
+                    display: none;
+                 }
+                &__wrap{
+                    margin: 40px 15px 30px;
+                    h6{
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-bottom: 15px;
+                        padding-left: 10px;
+                    }
+                }
+                &__pictures{
+                    gap: 1px;
+                    grid-template-columns: repeat(4, 107px);
+    
+                    justify-content: space-around;
+                    &-img{
+                        height: 107px;
+                        &:nth-child(3){
+                            display: none;
+                        }
+                        &:nth-child(5){
+                            display: none;
+                        }
+                    }
+                }
+                &__back{
+                    background-image: url(../img/footer.png);
+                    background-size: cover;
+                    &-footer{
+                        row-gap: 10px;
+                        padding-left: 20px;
+                        grid-template-columns: repeat(5, 90px);
+                        a{ 
+                            font-size: 10px;
+                            line-height: 14px;
+                            width: 90px;
+                    }
+                }
+                &-p{
+                    font-size: 10px; 
+                    padding: 15px 0 40px 25px;
+                }
+            }
+            }
+            .malachite{
+                &__wrap{
+                    padding: 30px;
+                    justify-content: space-between;
+                &-info{
+                    padding-left: 0px;
+                    padding-bottom: 0px;
+                    padding-top: 25px;
+                }
+                h2{
+                    font-size: 22px;
+                    line-height: 28px;
+                    padding-bottom: 30px;
+                    padding-right: 0px;
+                }
+                &-img{
+                    display: none;
+            }
+                }
+            &-button{
+                border-radius: 32px;
+                font-size: 12px;
+                padding: 4px 24px;
+                margin-right: auto;
+            }
+            }
+            .crystalvideo {
+                &-button{
+                    font-size: 10px;
+                    padding: 4px 16px;
+                    margin-top: 45%;
+                }
+                &-wrap{
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(2, 2fr);
+                    padding:50px 10px 20px;
+                   gap: 15px;
+                    &__info{
+                        
+                        justify-content: center;
+                    }
+                    &__video{
+                        height: 100%;
+                        width: 50%;
+                    }
+                    &__comment{
+                        
+                        justify-content: center;
+                        margin:0px 40px;
+                        gap: 5px;
+                        &__div{
+                            gap: 5px;
+                            &:nth-of-type(2){
+                                gap:5px;}
+                                &:nth-of-type(3){
+                                    gap:5px;
+                            }
+                            p{
+                                font-size: 12px;
+                                line-height: 14px;
+                            }
+                            h2{
+                                font-size: 12px;
+                            }
+                            img{
+                                height: 14px;
+                                max-width: 14px; 
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .container{
+        max-width: 480px;
+        }
+        .header{ 
+        &__nav{
+            margin: 0 20px;
+            p{
+                font-size: 10px;
+                padding: 0;
+                width: max-content;
+
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 8px 0;
+                    max-width: 16px;
+            }}
+            &__icon{
+                &-img{
+                    max-width: 16px;
+                &:first-of-type{
+                    margin-right: 18px;
+                }
+            }
+            }
+        }}
+        .main{
+            &__wrap{
+                background-size: cover;
+            }
+            &-circle{
+                padding: 25px 22px;
+                margin-bottom: 20px;
+                margin-right: 25px;
+                font-size: 10px;
+                line-height: 10px;
+          }
+            &-h1{
+                padding-top: 80px;
+                padding-bottom: 0;
+                font-size: 60px;
+                line-height: 60px;
+            }
+        }
+        .crystalscom{
+        &__content{
+            font-size: 12px;
+            padding: 10px 0 6px;
+            &-img{
+                height: 8px;
+            }
+        }
+        }
+        .malachite{
+            &__wrap{
+                padding: 18px;
+                justify-content: space-between;
+            &-info{
+                padding-left: 0px;
+                padding-bottom: 0px;
+                padding-top: 15px;
+            }
+            h2{
+                font-size: 20px;
+                line-height: 26px;
+                padding-bottom: 20px;
+                padding-right: 0px;
+            }
+            &-img{
+                display: none;
+        }
+            }
+        &-button{
+            border-radius: 32px;
+            font-size: 12px;
+            padding: 4px 20px;
+            margin-right: auto;
+        }
+        }
+        .crystalvideo {
+            &-button{
+                font-size: 10px;
+                padding: 4px 14px;
+                margin-top: 44%;
+            }
+            &-wrap{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 2fr);
+                padding:30px 10px 20px;
+               gap: 15px;
+                &__info{
+                    
+                    justify-content: center;
+                }
+                &__video{
+                    height: 100%;
+                    width: 50%;
+                }
+                &__comment{
+                    
+                    justify-content: center;
+                    margin:0px 20px;
+                    gap: 3px;
+                    &__div{
+                        gap: 3px;
+                        &:nth-of-type(2){
+                            gap:3px;}
+                            &:nth-of-type(3){
+                                gap:3px;
+                        }
+                        p{
+                            font-size: 12px;
+                            line-height: 12px;
+                        }
+                        h2{
+                            font-size: 10px;
+                        }
+                        img{
+                            height: 12px;
+                            max-width: 12px; 
+                        }
+                    }
+                }
+            }
+        }
+        .popularcrystals{
+            &__wrap{
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding-bottom: 0px;
+                gap: 7px;
+                justify-content: center;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                gap: 0px;
+                padding: 40px 25px;
+            }
+            &__ul{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                padding-top: 0px;
+                margin-right: 0;
+                font-size: 22px;
+                li {
+                    margin-bottom: 0;
+                    padding-left: 0px; 
+                    text-align: center;
+                    line-height: 35px;
+                    &:nth-child(1){
+                        text-shadow: 0px 0px 20px#fd400c;
+                    }
+                    &:nth-child(2){
+                        text-shadow: 0px 0px 20px#ffae00;
+                    }
+                    &:nth-child(3){
+                        text-shadow: 0px 0px 20px#1979ac;
+                    }
+                    &:nth-child(4){
+                        text-shadow: 0px 0px 20px#c814b9;
+                    }
+                    &:nth-child(5){
+                        text-shadow: 0px 0px 20px#fdd703;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            &-h2{
+                text-align: center;
+                padding-left: 0;
+                font-size: 14px;
+            }
+            &__button{
+                padding: 0 16px;
+                height: 30px;
+                margin-top: 0px;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 10px;
+                font-weight: 400;
+            }
+                .crystal{
+                    padding-top: 40px;
+                    background-image: none;
+                    display: flex;
+                    font-size: 12px;
+                    justify-content: space-around;
+                    gap: 7px;
+                    &-img{
+                        height: 140px;
+                        padding: 40px 30px 40px;
+                    }
+                    &__div {
+                        box-shadow: 0 0 40px#f0d5d4;
+                        border: #EAC1BF;
+                        padding: 22px 0;
+                        margin: 0 auto;
+                        border-radius: 12px;
+                        &:first-child {
+                            margin-right: 0;
+                            & :nth-of-type(2){
+                                text-transform: capitalize;
+                                letter-spacing: 1px;
+                                font-size: 12px;
+                        }
+                    }
+                    &:nth-child(1){
+                        display: none;
+                    }
+                }
+            }
+}
+.shopbyintention{
+    &-img{
+        width: 44px;
+        padding-bottom: 15px;
+    }
+    h3{
+    font-size: 32px;
+    padding-bottom: 0px;
+    margin-top: 30px;
+}
+&__wrap{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5px;
+    margin: 30px 10px;
+    }
+    &__div{
+        padding-bottom: 10px;
+        p{
+            font-size: 14px;
+        }
+    }
+}
+.giftsofgratitude{  
+    h4{
+    margin-top: 40px;
+    padding-bottom: 28px;
+    font-size: 42px;
+}
+&__wrap{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px 55px;
+    gap: 30px;
+    }
+    &__div{
+        gap: 0;
+        .add{
+            height: 210px;
+        }
+        .main{
+            height: 210px;
+        }
+        &-name{
+            font-size: 32px;
+        }
+        .price{
+            font-size: 14px;
+            padding-top: 4px;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+    }
+}
+.joinourcrystalclub{
+    &__pictures{
+        gap: 10px;
+        &-img{
+            height: 180px;
+            &:nth-child(1){
+                display: none;
+            }
+            &:nth-child(2){
+                display: none;
+            }
+        }
+    }
+    &__wrap{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        gap: 20px;
+    }
+    &__button{
+        justify-content: center;
+        margin-left: auto;
+        font-size: 12px;
+        padding: 5px 24px;
+    }
+    &__info{
+        align-items: center;
+        padding-top: 0px;
+        gap: 10px;
+        h5{
+            font-size: 34px;
+            line-height: 40px;
+            padding-right: 0px;
+        }
+        &-p{
+            line-height: 18px;
+            padding: 0 80px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+.comment{
+    &__img{
+        display: none;
+        &:nth-child(4){
+            height: 12px;
+            width: 13px;
+            display: block;
+        }
+    }
+    &__wrap{
+        margin: 18px 20px;
+    }
+    &__comment{
+        gap: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &-p{
+            font-size: 22px;
+            line-height: 26px;
+            padding: 0;
+        }
+        h5{
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 1px;
+            padding-bottom: 0px;
+        }
+    }
+    &__face{
+        height: 40px;
+        width: 40px;
+    }
+}
+.crystalsdotcom{
+    &__title{
+        display: none;
+     }
+    &__wrap{
+        margin: 40px 15px 30px;
+        h6{
+            font-size: 10px;
+            line-height: 12px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+        }
+    }
+    &__pictures{
+        gap: 1px;
+        grid-template-columns: repeat(3, 95px);
+        justify-content: space-around;
+        &-img{
+            height: 95px;
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                display: none;
+            }
+            &:nth-child(5){
+                display: none;
+            }
+        }
+    }
+    &__back{
+        background-image: url(../img/footer.png);
+        background-size: cover;
+        &-footer{
+            row-gap: 5px;
+            padding-left: 15px;
+            grid-template-columns: repeat(3, 95px);
+            grid-template-rows: repeat(4, 1fr);
+            a{ 
+                font-size: 10px;
+                line-height: 10px;
+                width: 95px;
+                &:nth-child(4){
+                    padding-left: 0px;
+                }
+                &:nth-child(5){
+                    padding-left: 0px;
+                }
+                &:nth-child(9){
+                    padding-left: 0px;
+                }
+                &:nth-child(10){
+                    padding-left: 0px;
+                }
+        }
+    }
+    &-p{
+        font-size: 10px; 
+        padding: 15px 0 30px 15px;
+    }
+}
+}
+#scroll{
+    bottom: 10px; 
+    right: 10px;
+    img{
+        width: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    .header{        
+        &__nav{
+            margin: 0 16px;
+            p{
+                text-align: center;
+                font-size: 10px;
+                padding: 0;
+                width: max-content;
+            }
+        }
+        .nav{
+            &__logo{
+                &-img{
+                    margin: 8px 0;
+                    max-width: 14px;
+            }}
+            &__icon{
+                &-img{
+                    max-width: 14px;
+                &:first-of-type{
+                    margin-right: 16px;
+                }
+            }
+            }
+        }}
+    .main{
+        &__wrap{
+            background-size: cover;
+        }
+        &-circle{
+            padding: 20px 18px;
+            margin-bottom: 20px;
+            margin-right: 25px;
+            font-size: 8px;
+            line-height: 8px;
+      }
+        &-h1{
+            padding-top: 80px;
+            padding-bottom: 0;
+            font-size: 50px;
+            line-height: 48px;
+        }
+    }
+    .crystalscom{
+        &__content{
+            font-size: 10px;
+            padding: 8px 0 4px;
+            &-img{
+                height: 8px;
+            }
+        }
+        
+        }
+        .popularcrystals{
+            &__wrap{
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding-bottom: 0px;
+                gap: 7px;
+                justify-content: center;
+            }
+            &__div{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                gap: 0px;
+                padding: 40px 25px;
+            }
+            &__ul{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                padding-top: 0px;
+                margin-right: 0;
+                font-size: 18px;
+                li {
+                    margin-bottom: 0;
+                    padding-left: 0px; 
+                    text-align: center;
+                    line-height: 35px;
+                    &:nth-child(1){
+                        text-shadow: 0px 0px 20px#fd400c;
+                    }
+                    &:nth-child(2){
+                        text-shadow: 0px 0px 20px#ffae00;
+                    }
+                    &:nth-child(3){
+                        text-shadow: 0px 0px 20px#1979ac;
+                    }
+                    &:nth-child(4){
+                        text-shadow: 0px 0px 20px#c814b9;
+                    }
+                    &:nth-child(5){
+                        text-shadow: 0px 0px 20px#fdd703;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            &-h2{
+                text-align: center;
+                padding-left: 0;
+                font-size: 14px;
+            }
+            &__button{
+                padding: 0 16px;
+                height: 30px;
+                margin-top: 0px;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 10px;
+                font-weight: 400;
+            }
+                .crystal{
+                    padding-top: 40px;
+                    background-image: none;
+                    display: flex;
+                    font-size: 12px;
+                    justify-content: space-around;
+                    gap: 7px;
+                    &-img{
+                        height: 130px;
+                        padding: 40px 30px 40px;
+                    }
+                    &__div {
+                        box-shadow: 0 0 40px#f0d5d4;
+                        border: #EAC1BF;
+                        padding: 18px 0;
+                        margin: 0 auto;
+                        border-radius: 12px;
+                        &:first-child {
+                            margin-right: 0;
+                            & :nth-of-type(2){
+                                text-transform: capitalize;
+                                letter-spacing: 1px;
+                                font-size: 12px;
+                        }
+                    }
+                }
+            }
+}
+.crystalvideo {
+    &-button{
+        display: none;
+    }
+    &-wrap{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1,12fr);
+        padding:40px 10px 20px;
+       gap: 0px;
+        &__info{
+            
+            justify-content: center;
+        }
+        &__video{
+            display: none;
+        }
+        &__comment{
+            
+            justify-content: center;
+            margin:0px 20px;
+            gap: 3px;
+            &__div{
+                gap: 3px;
+                &:nth-of-type(2){
+                    gap:3px;}
+                    &:nth-of-type(3){
+                        gap:3px;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+                h2{
+                    font-size: 12px;
+                }
+                img{
+                    height: 12px;
+                    max-width: 12px; 
+                }
+            }
+        }
+    }
+}
+}
+}
