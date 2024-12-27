@@ -35,12 +35,34 @@
     margin:0 auto;
 }
 .header{
+    position: relative;
     border-bottom: 1px solid #EAC1BF;
 &__nav{
     display: grid;
     grid-template-columns: repeat(3,1fr) ;
     align-items: center;
     margin: 0px 56px 0 52px;
+    .dropdown-menu {
+        display: none; /* Скрыть меню по умолчанию */
+        position: absolute;
+        top: 100%; /* Отображение под хедером */
+        left: 0;
+        background-color: rgb(249, 239, 246);
+        z-index: 1;
+        box-shadow: 5px 5px 10px #C09DBD;
+        & a {
+            font-family: $fontRethinkR;
+            font-size: 20px;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                background-color: #C09DBD;
+                        }
+        }
+    
+}
     p{
         display: flex;
         padding-left: 70px;        
@@ -52,6 +74,19 @@
         text-transform: uppercase;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav{
 &__logo-img{
     max-width: 36px;
@@ -377,7 +412,7 @@ padding-bottom: 3px;
 .shopbyintention{
     border-bottom: 1px solid #EAC1BF;
     &-img{
-        padding-bottom: 23px;
+        padding-bottom: 25px;
     }
     h3{
     font-family: $fontCormorantR;
@@ -398,7 +433,7 @@ padding-bottom: 3px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 124px;
+        padding-bottom: 126px;
         text-decoration: none;
         &:nth-child(1)p:hover{
             text-shadow: 0px 0px 20px#f72b6c;
@@ -1264,6 +1299,13 @@ a{
         .header{
         &__nav{
             margin: 0px 46px 0px 42px;
+                .dropdown-menu {
+        & a {
+            font-size: 18px;
+
+            padding: 13px;
+
+        }}
             p{
                 justify-content: center;
                 font-size: 16px;
@@ -1746,6 +1788,13 @@ a{
         .header{
         &__nav{
             margin: 0px 40px 0px 36px;
+            .dropdown-menu {
+                & a {
+                    font-size: 16px;
+        
+                    padding: 10px;
+        
+                }}
             p{
                 justify-content: center;
                 font-size: 12px;
@@ -2097,6 +2146,12 @@ a{
         max-width: 768px;
         }
         .header{
+            .dropdown-menu {
+                & a {
+                    font-size: 14px;
+                    padding: 10px;
+        
+                }}
         &__nav{
             margin: 0 30px;
             p{
@@ -2769,6 +2824,13 @@ a{
         .header{ 
         &__nav{
             margin: 0 20px;
+            .dropdown-menu {
+                right: 0; 
+                & a {
+                    font-size: 14px;
+                    padding: 8px;
+        
+                }}
             p{
                 font-size: 10px;
                 padding: 0;
