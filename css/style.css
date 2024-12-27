@@ -32,6 +32,8 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   margin: 0px 56px 0 52px;
 }
@@ -57,6 +59,8 @@
   background-color: #C09DBD;
 }
 .header__nav p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 70px;
   padding-top: 4px;
@@ -74,6 +78,8 @@
   cursor: pointer;
 }
 .header .nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -93,12 +99,17 @@
 .main {
   border-bottom: 1px solid #EAC1BF;
   background-color: #fbf5f9;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .main__wrap {
   background-image: url(../img/main.svg);
   background-position: center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -106,6 +117,8 @@
           flex-direction: column;
 }
 .main-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 53px 46px;
   background-color: black;
@@ -165,12 +178,16 @@
   border-bottom: 1px solid #EAC1BF;
 }
 .malachite__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .malachite__wrap-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -184,6 +201,8 @@
   padding-top: 106px;
 }
 .malachite__wrap h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Cormorant-Regular", sans-serif;
   font-weight: 400;
@@ -209,6 +228,8 @@
   margin-top: 76px;
 }
 .malachite-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #000;
   border-radius: 32px;
@@ -222,6 +243,7 @@
 }
 .malachite-button:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
           box-shadow: 0 0 0 2px #EAC1BF, 0 0 0 3px #000000;
 }
 
@@ -238,11 +260,15 @@
 }
 .crystalvideo-button:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 0 2px #EAC1BF;
           box-shadow: 0 0 0 2px #EAC1BF;
 }
 .crystalvideo-wrap {
   padding: 188px 127px 62px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 2fr);
@@ -256,6 +282,8 @@
   -ms-grid-column: 2;
 }
 .crystalvideo-wrap__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   -webkit-box-pack: center;
@@ -263,19 +291,29 @@
           justify-content: center;
 }
 .crystalvideo-wrap__video {
+  -o-object-fit: cover;
      object-fit: cover;
+  -ms-grid-column-span: 2;
   grid-column: span 2;
+  -ms-grid-row-span: 2;
   grid-row: span 2;
   height: 102%;
   width: 99%;
 }
 .crystalvideo-wrap__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
- flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 63px 120px 15px 255px;
   gap: 37px;
 }
 .crystalvideo-wrap__comment__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -314,7 +352,7 @@
 }
 .popularcrystals__wrap {
   margin-top: auto;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
 }
 .popularcrystals__div {
   display: -webkit-box;
@@ -444,7 +482,7 @@
           flex-direction: row;
   background-image: url(../img/Shadow.png);
   background-repeat: no-repeat;
-  padding-top: 270px;
+  padding-top: 268px;
 }
 .popularcrystals .crystal-img {
   height: 256px;
@@ -582,7 +620,7 @@
   font-size: 116px;
   text-align: center;
   padding-bottom: 90px;
-  margin-top: 120px;
+  margin-top: 117px;
 }
 .giftsofgratitude__wrap {
   display: -webkit-box;
@@ -634,7 +672,6 @@
 
 .joinourcrystalclub {
   border-bottom: 1px solid #EAC1BF;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(234, 193, 191, 0.5)), to(rgb(255, 255, 255)));
   background: linear-gradient(to right, rgba(234, 193, 191, 0.5), rgb(255, 255, 255));
 }
 .joinourcrystalclub__pictures {
@@ -645,7 +682,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 24px;
+  gap: 23px;
 }
 .joinourcrystalclub__wrap {
   display: -webkit-box;
@@ -814,6 +851,7 @@
   background-image: url(../img/footer.png);
 }
 .crystalsdotcom__back-footer {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: 1fr 27px 1fr;
@@ -1188,6 +1226,7 @@
     background-size: cover;
   }
   .crystalsdotcom__back-footer {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: 1fr 27px 1fr;
@@ -1847,6 +1886,7 @@
     background-size: cover;
   }
   .crystalsdotcom__back-footer {
+    display: -ms-grid;
     display: grid;
     row-gap: 18px;
     padding-left: 50px;
@@ -1874,6 +1914,8 @@
     padding-bottom: 0px;
   }
   .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2832,6 +2874,8 @@
             justify-content: center;
   }
   .popularcrystals__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2843,6 +2887,7 @@
     padding: 40px 25px;
   }
   .popularcrystals__ul {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
