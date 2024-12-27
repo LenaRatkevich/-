@@ -6,18 +6,28 @@
     <title>Crystals.com</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
+    <script src="./js/burger.js"></script>
+
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <div class="nav__logo">
+                <div class="nav__logo" onclick="toggleMenu()">
                     <img class="nav__logo-img" src="./img/icons8-меню.svg" alt="Логотип">
                 </div>
                 <p class="header-p">Free shipping on orders over $75</p>
                 <div class="nav__icon">
                     <img class="nav__icon-img" src="./img/Frame.svg" alt="Иконка 1">
                     <img class="nav__icon-img" src="./img/Frame10.svg" alt="Иконка 2">
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#popularcrystals">Popular crystals</a>
+                    <a href="#shopbyintention">Shop by intention</a>
+                    <a href="#giftsofgratitude">Gifts of gratitude</a>
+                    <a href="#joinourcrystalclub">Our crystal club</a>
+                    <a href="#crystalsdotcom">Info</a>
+
                 </div>
             </nav>
         </div>
@@ -90,7 +100,7 @@
         </div>
     </section>
 
-    <section class="popularcrystals">
+    <section class="popularcrystals" id="popularcrystals">
         <div class="container"> 
             <div class="popularcrystals__div">
                 <div class="popularcrystals__wrap">
@@ -119,7 +129,7 @@
             </div>
         </div> 
     </section>
-    <section class="shopbyintention">
+    <section class="shopbyintention" id="shopbyintention">
         <div class="container"> 
             <h3>Shop by intention.</h3>
             <div class="shopbyintention__wrap">
@@ -155,7 +165,7 @@
             
         </div>
     </section>
-    <section class="giftsofgratitude">
+    <section class="giftsofgratitude" id="giftsofgratitude">
         <div class="container"> 
             <h4>Gifts of gratitude</h4> 
             <div class="giftsofgratitude__wrap"> 
@@ -186,7 +196,7 @@
             </div>
         </div>
     </section>
-    <section class="joinourcrystalclub">
+    <section class="joinourcrystalclub" id="joinourcrystalclub">
         <div class="container"> 
             <div class="joinourcrystalclub__wrap">
                 <div class="joinourcrystalclub__info">
@@ -217,7 +227,7 @@
                 </div>
             </div>
         </section>
-    <footer class="crystalsdotcom">
+    <footer class="crystalsdotcom" id="crystalsdotcom">
         <div class="container">
             <div class="crystalsdotcom__wrap">
                 <h6>@crystals.com #crystalsdotcom</h6>
