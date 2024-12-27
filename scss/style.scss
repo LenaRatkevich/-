@@ -75,18 +75,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .nav{
 &__logo-img{
     max-width: 36px;
@@ -305,7 +293,7 @@ padding-bottom: 3px;
     border-bottom: 1px solid #EAC1BF;
     &__wrap{
         margin-top: auto;
-        padding-bottom: 19px;
+        padding-bottom: 20px;
     }
     &__div{
         display: flex;
@@ -380,7 +368,7 @@ padding-bottom: 3px;
             flex-direction: row;
             background-image: url(../img/Shadow.png);
             background-repeat: no-repeat;
-            padding-top: 270px;
+            padding-top: 268px;
             &-img{
                 height: 256px;
                 padding: 83px 43px 80px;
@@ -492,7 +480,7 @@ padding-bottom: 3px;
     font-size: 116px;
     text-align: center;
     padding-bottom: 90px;
-    margin-top: 120px;
+    margin-top: 117px;
 }
 &__wrap{
     display: flex;
@@ -538,7 +526,7 @@ padding-bottom: 3px;
     &__pictures{
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 23px;
     }
     &__wrap{
         display: flex;
